@@ -3,4 +3,7 @@
     margin: 0;
 }
 
-/*root a faire au début avec font family etc... peut etre importer le raleway en police
+/*root a faire au début avec font family etc... peut etre importer le raleway en police*/
+img {
+    width : 10em;
+}
