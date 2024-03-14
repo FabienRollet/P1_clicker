@@ -32,6 +32,23 @@ nav>ul:last-child{
 }
 /*END NAVBAR STYLE*/
 
+.barreHaut {
+    width : 100%;
+    position: absolute;
+    top: -18%;
+    left: 0%;
+    
+}
+
+.barreBas {
+    width : 100%;
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    transform: rotate(180deg);
+    
+}
+
 .how-to-play {
     background-color: #fc974a;
     color: black;
