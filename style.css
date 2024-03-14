@@ -3,14 +3,28 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Raleway",sans-serif;
-    background-color: #FFE5A2;
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
 
 /*START NAVBAR STYLE*/
 h2{
-    background-image: url(./assets/images/2303.w032.n002.903B.p15.903.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-image: url(./assets/images/wood\ navbar.png);
+    background-size: 100vw 20vh;
+    
+}
+
+header>img{ /*scroll down menu img*/
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    position: relative;
+    bottom: 1.68rem;
 }
 
 nav>ul:first-child {
@@ -19,8 +33,11 @@ nav>ul:first-child {
     justify-content: space-around;
     align-items: center;
 }
+nav>ul>li>img{ /* sound img*/
+    width:2rem;
+}
 
-nav>ul>li>img{
+nav>ul>li>a>img{ /*social network img*/
     width:2rem;
 }
 
@@ -28,5 +45,6 @@ nav>ul:last-child{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 /*END NAVBAR STYLE*/
