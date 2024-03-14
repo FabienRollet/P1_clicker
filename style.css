@@ -6,7 +6,9 @@
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
-
+body {
+    background-color: #FFE5A2;
+}
 /*START NAVBAR STYLE*/
 h2{
     display: flex;
@@ -48,3 +50,54 @@ nav>ul:last-child{
     
 }
 /*END NAVBAR STYLE*/
+
+.barreHaut {
+    width : 100%;
+    position: absolute;
+    top: -18%;
+    left: 0%;
+    
+}
+
+.barreBas {
+    width : 100%;
+    position: absolute;
+    bottom: -20%;
+    left: 0%;
+    transform: rotate(180deg);
+    
+}
+
+.how-to-play {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.how-to-play.open {
+    display: block;
+}
+
+.who-are-we {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.who-are-we.open {
+    display: block;
+}
