@@ -3,11 +3,12 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Raleway",sans-serif;
-    background-color: #FFE5A2;
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
-
+body {
+    background-color: #FFE5A2;
+}
 /*START NAVBAR STYLE*/
 h2{
     background-image: url(./assets/images/2303.w032.n002.903B.p15.903.png);
@@ -30,3 +31,37 @@ nav>ul:last-child{
     justify-content: center;
 }
 /*END NAVBAR STYLE*/
+
+.how-to-play {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.how-to-play.open {
+    display: block;
+}
+
+.who-are-we {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.who-are-we.open {
+    display: block;
+}
