@@ -1,11 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Raleway",sans-serif;
+    background-color: #FFE5A2;
 }
 
+/*root a faire au début avec font family etc... peut etre importer le raleway en police */
 
-/*root a faire au début avec font family etc... peut etre importer le raleway en police*/
-img {
-    width : 10em;
+/*START NAVBAR STYLE*/
+h2{
+    background-image: url(./assets/images/2303.w032.n002.903B.p15.903.png);
 }
 
+nav>ul:first-child {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>ul>li>img{
+    width:2rem;
+}
+
+nav>ul:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*END NAVBAR STYLE*/
