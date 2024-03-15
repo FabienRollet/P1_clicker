@@ -3,7 +3,9 @@
 * {
     box-sizing: border-box;
     margin: 0;
+
     font-family: "Raleway",sans-serif;
+
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
@@ -11,6 +13,7 @@ body {
     background-color: #FFE5A2;
 }
 /*START NAVBAR STYLE*/
+
 
 h2{
     display: flex;
@@ -30,6 +33,7 @@ header>img{ /*scroll down menu img*/
     position: relative;
     bottom: 1.68rem;
 
+
 }
 
 nav>ul:first-child {
@@ -40,12 +44,14 @@ nav>ul:first-child {
 }
 
 
+
 nav>ul>li>img{ /* sound img*/
     width:2rem;
 }
 
 nav>ul>li>a>img{ /*social network img*/
     width:2rem;
+
 }
 
 nav>ul:last-child {
@@ -55,6 +61,36 @@ nav>ul:last-child {
 }
 
 /*END NAVBAR STYLE*/
+
+
+ul {
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    text-align: right;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.side-bar {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 10rem;
+    width: 4rem;
+
+}
+
+
+.upgradeList>li {
+    list-style-type: none;
+    background-size: 3rem, 5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+    padding-top: 5rem;
+}
 
 .barreHaut {
     width : 100%;
@@ -198,3 +234,4 @@ ul {
         gap: 7px;
         padding-right: 2rem;
     }
+
