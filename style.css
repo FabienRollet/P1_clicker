@@ -1,32 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: #FFE5A2;
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
 
 /*START NAVBAR STYLE*/
-h2{
+h2 {
     background-image: url(./assets/images/2303.w032.n002.903B.p15.903.png);
 }
 
 nav>ul:first-child {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-nav>ul>li>img{
-    width:2rem;
+nav>ul>li>img {
+    width: 2rem;
 }
 
-nav>ul:last-child{
+nav>ul:last-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 /*END NAVBAR STYLE*/
+/*css d'un Autoclicker*/
+ul {
+    list-style-type: none;
+}
+.firstAutoClicker{
+    display: inline-grid;
+    grid-template-columns: 3rem 100px 100px;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: "picture production production" "picture lvl costForNextLevel";
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.autoclickerPicture{
+    border: 1px solid black;
+    grid-area: picture;
+}
+.production{
+    border: 1px solid black;
+    border-radius: 0px 40px 0px 0px;
+    grid-area: production;
+}
+.level{
+    border: 1px solid black;
+    grid-area: lvl;
+}
+.costForNextLevel{
+    border: 1px solid black;
+    border-radius: 0px 0px 40px 0px;
+    grid-area: costForNextLevel;
+}
+.cadreImgUprade{
+    
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+    width: 4rem;
+}
+.grandMa{
+    position: relative;
+    top: -40px; left: -5px;
+    width: 4rem;
+    height: 50%;
+    object-fit: cover;
+}
+
