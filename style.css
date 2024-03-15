@@ -17,8 +17,7 @@ h2{
     color :#FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
-    background-size: 100vw 20vh;
-    
+    background-size: 100vw 19vh;
 }
 
 header>img{ /*scroll down menu img*/
@@ -36,6 +35,7 @@ nav>ul:first-child {
     justify-content: space-around;
     align-items: center;
 }
+
 nav>ul>li>img{ /* sound img*/
     width:2rem;
 }
@@ -48,7 +48,6 @@ nav>ul:last-child{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 /*END NAVBAR STYLE*/
 
@@ -57,7 +56,6 @@ nav>ul:last-child{
     position: relative;
     top: -18%;
     left: 0%;
-    
 }
 
 .barreBas {
@@ -66,7 +64,6 @@ nav>ul:last-child{
     bottom: -3.3rem;
     left: 0%;
     transform: rotate(180deg);
-    
 }
 
 .how-to-play {
@@ -103,6 +100,20 @@ nav>ul:last-child{
     display: block;
 }
 
+.croissant-img {
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto;
+}
+
+section>p {
+    text-align: center;
+  } 
+
+.croissant-img:hover {
+    transform: scale(1.2);
+}
+
 /* RESPONSIVE DESKTOP */
 @media screen and (width >=768px) {
     h2 {
@@ -136,4 +147,3 @@ nav>ul:last-child{
         gap: 7px;
         padding-right: 2rem;
     }
-}
