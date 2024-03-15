@@ -14,10 +14,10 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
+    color :#FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
     background-size: 100vw 19vh;
-    
 }
 
 header>img{ /*scroll down menu img*/
@@ -35,6 +35,7 @@ nav>ul:first-child {
     justify-content: space-around;
     align-items: center;
 }
+
 nav>ul>li>img{ /* sound img*/
     width:2rem;
 }
@@ -47,25 +48,22 @@ nav>ul:last-child{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
 /*END NAVBAR STYLE*/
 
 .barreHaut {
     width : 100%;
-    position: absolute;
+    position: relative;
     top: -18%;
     left: 0%;
-    
 }
 
 .barreBas {
     width : 100%;
     position: absolute;
-    bottom: -20%;
+    bottom: -3.3rem;
     left: 0%;
     transform: rotate(180deg);
-    
 }
 
 .how-to-play {
@@ -107,6 +105,7 @@ nav>ul:last-child{
     display: block;
     margin: 2rem auto;
 }
+
 section>p {
     text-align: center;
   } 
@@ -114,3 +113,37 @@ section>p {
 .croissant-img:hover {
     transform: scale(1.2);
 }
+
+/* RESPONSIVE DESKTOP */
+@media screen and (width >=768px) {
+    h2 {
+        display:none
+    }
+    header>img{
+        display:none
+    }
+    .navbar{
+        display: grid;
+        color :#FFE5A2;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        padding: 2.7rem;
+        background-image: url(./assets/images/wood\ navbar.png);
+        background-size: 100vw 20vh;
+        gap:10px
+    }
+    nav>ul:first-child {
+        display:flex;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav>ul:last-child{
+        display:flex;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 7px;
+        padding-right: 2rem;
+    }
