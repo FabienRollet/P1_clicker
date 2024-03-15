@@ -3,15 +3,33 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Raleway", sans-serif;
-    background-color: #FFE5A2;
+    font-family: "Raleway",sans-serif;
 }
 
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
-
+body {
+    background-color: #FFE5A2;
+}
 /*START NAVBAR STYLE*/
-h2 {
-    background-image: url(./assets/images/2303.w032.n002.903B.p15.903.png);
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color :#FFE5A2;
+    padding: 3rem;
+    background-image: url(./assets/images/wood\ navbar.png);
+    background-size: 100vw 19vh;
+}
+
+header>img{ /*scroll down menu img*/
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    position: relative;
+    bottom: 1.68rem;
+
 }
 
 nav>ul:first-child {
@@ -21,8 +39,13 @@ nav>ul:first-child {
     align-items: center;
 }
 
-nav>ul>li>img {
-    width: 2rem;
+
+nav>ul>li>img{ /* sound img*/
+    width:2rem;
+}
+
+nav>ul>li>a>img{ /*social network img*/
+    width:2rem;
 }
 
 nav>ul:last-child {
@@ -32,7 +55,71 @@ nav>ul:last-child {
 }
 
 /*END NAVBAR STYLE*/
-/*css d'un Autoclicker*/
+
+.barreHaut {
+    width : 100%;
+    position: relative;
+    top: -18%;
+    left: 0%;
+}
+
+.barreBas {
+    width : 100%;
+    position: absolute;
+    bottom: -3.3rem;
+    left: 0%;
+    transform: rotate(180deg);
+}
+
+.how-to-play {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.how-to-play.open {
+    display: block;
+}
+
+.who-are-we {
+    background-color: #fc974a;
+    color: black;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.who-are-we.open {
+    display: block;
+}
+
+.croissant-img {
+    max-width: 600px;
+    display: block;
+    margin: 2rem auto;
+}
+
+section>p {
+    text-align: center;
+  } 
+
+.croissant-img:hover {
+    transform: scale(1.2);
+}
+
+/*AUTOCLICKER*/
 ul {
     list-style-type: none;
 }
@@ -78,3 +165,36 @@ ul {
     object-fit: cover;
 }
 
+/* RESPONSIVE DESKTOP */
+@media screen and (width >=768px) {
+    h2 {
+        display:none
+    }
+    header>img{
+        display:none
+    }
+    .navbar{
+        display: grid;
+        color :#FFE5A2;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto;
+        padding: 2.7rem;
+        background-image: url(./assets/images/wood\ navbar.png);
+        background-size: 100vw 20vh;
+        gap:10px
+    }
+    nav>ul:first-child {
+        display:flex;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav>ul:last-child{
+        display:flex;
+        list-style-type: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 7px;
+        padding-right: 2rem;
+    }
