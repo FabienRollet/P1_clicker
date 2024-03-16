@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,14 +12,14 @@
 
 <body>
     <header> <!-- NAV BAR-->
-        <h2 class="menu">Menu</h2>
+        <h2 onclick="togglePopup0()" class="menu"><a href="navbar"></a>Menu</h2>
         <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">
         <nav class="navbar">
             <ul>
 
                 <li onclick="togglePopup1()"><a href="how-to-play" ></a>Comment jouer ?</li>
                 <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
-                <li><img src="https://www.pngfind.com/pngs/m/74-748701_white-sound-icon-free-icons-sound-icon-white.png" alt="Activer le son"></li>
+                <li><img src="/assets/images/Speaker_Icon.svg.png" alt="Activer le son"></li>
             </ul>
             <ul>
                 <li><a href=""><img src="/assets/images/faceboo.png" alt="Link to facebook"></a></li>
@@ -59,7 +60,7 @@
 
             <h1 class="counter"></h1>
             <p>
-                Vous avez cliquez <span id="nombreClics">0</span>     fois.
+                <span id="nombreClics">0</span> $
               </p>
             <img id="boutonClic" class="croissant-img" src="/assets/images/cwaso.png" alt="a clickable croissant ">
             
