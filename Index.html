@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,14 +12,14 @@
 
 <body>
     <header> <!-- NAV BAR-->
-        <h2 class="menu">Menu</h2>
+        <h2 onclick="togglePopup0()" class="menu"><a href="navbar"></a>Menu</h2>
         <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">
         <nav class="navbar">
             <ul>
-                <li onclick="togglePopup1()"><a href="how-to-play"></a>Comment jouer ?</li>
+
+                <li onclick="togglePopup1()"><a href="how-to-play" ></a>Comment jouer ?</li>
                 <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
-                <li><img src="https://www.pngfind.com/pngs/m/74-748701_white-sound-icon-free-icons-sound-icon-white.png"
-                        alt="Activer le son"></li>
+                <li><img src="/assets/images/Speaker_Icon.svg.png" alt="Activer le son"></li>
             </ul>
             <ul>
                 <li><a href=""><img src="/assets/images/faceboo.png" alt="Link to facebook"></a></li>
@@ -35,15 +36,18 @@
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
 
             <h3>Comment jouer?</h3>
+
             <p>Il suffit de cliquer sur le croissant pour rassembler des points. Essaye d’obtenir le plus de points
                 possible!!</p>
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
         </section>
         <!-- section Qui sommes nous -->
+
         <section class="who-are-we">
 
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
             <h3>Qui sommes nous</h3>
+
             <img src="" alt="croissant Fabien">
             <img src="" alt="croissant PJ">
             <img src="" alt="croissant Kevin">
@@ -52,19 +56,21 @@
         </section>
     </header>
     <main>
+
         <!--CROISSANT AND COUNTER-->
-        <section>
+        <section class="midle">
+
             <h1 class="counter"></h1>
             <p>
-                Vous avez cliquez <span id="nombreClics">0</span> fois.
-            </p>
-            <img id="boutonClic" class="croissant-img" src="/P1_clicker/assets/images/cwaso.png"
-                alt="a clickable croissant ">
-
+                <span id="nombreClics">0</span> $
+              </p>
+            <img id="boutonClic" class="croissant-img" src="/assets/images/cwaso.png" alt="a clickable croissant ">
+            
         </section>
 
         <!--AUTOCLICKER-->
-        <section class="autoClickerContainer">
+
+        <section class="autoclicker">
             <ul>
                 <li class="autoClicker">
                     <section class="autoClickerPicture"></section>
@@ -87,24 +93,29 @@
             </ul>
         </section>
 
+
         <!--UPGRADE-->
-        <section>
-            <article><img src="" alt="upgrade 1"></article>
-            <article><img src="" alt="upgrade 2"></article>
-            <article><img src="" alt="upgrade 3"></article>
-            <article><img src="" alt="upgrade 4"></article>
-            <article><img src="" alt="upgrade 5"></article>
-            <article><img src="" alt="upgrade 6"></article>
-            <article><img src="" alt="upgrade 7"></article>
-            <article><img src="" alt="upgrade 8"></article>
-            <article><img src="" alt="upgrade 9"></article>
-            <article><img src="" alt="upgrade 10"></article>
-            <article><img src="" alt="upgrade 11"></article>
-            <article><img src="" alt="upgrade 12"></article>
-            <article><img src="" alt="upgrade 13"></article>
-            <article><img src="" alt="upgrade 14"></article>
-            <article><img src="" alt="upgrade 15"></article>
+        
+        <section class=upgrade>
+            <ul class="upgradeList">
+                <img class="side-bar" src="/assets/images/barre laterale.png" alt="test">
+                <li class="upgradeImg1">.</li>
+                <li class="upgradeImg2"></li>
+                <li class="upgradeImg3"></li>
+                <li class="upgradeImg4"></li>
+                <li class="upgradeImg5"></li>
+                <li class="upgradeImg6"></li>
+                <li class="upgradeImg7"></li>
+                <li class="upgradeImg8"></li>
+                <li class="upgradeImg9"></li>
+                <li class="upgradeImg10"></li>
+                <li class="upgradeImg11"></li>
+                <li class="upgradeImg12"></li>
+            
+            </ul>
+
         </section>
+
 
     </main>
 
@@ -115,23 +126,23 @@
                 <div class="slide-image">
                     <!-- <img src="assets/images/pub-wildEats.jpg" alt="pub projet wildEats"> -->
                     <p>pub1</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="slide-image">
-                    <!-- <img src="assets/images/pub-wildQuizz.jpg" alt="pub projet wildQuizz"> -->
-                    <p>pub2</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="slide-image">
-                    <!-- <img src="assets/images/pub-wildTrombi.jpg" alt="pub projet wildTrombi"> -->
-                    <p>pub3</p>
-                </div>
-            </div>
-    </aside>
 
-    <script src="script.js"></script>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-image">
+                        <!-- <img src="assets/images/pub-wildQuizz.jpg" alt="pub projet wildQuizz"> -->
+                        <p>pub2</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="slide-image">
+                        <!-- <img src="assets/images/pub-wildTrombi.jpg" alt="pub projet wildTrombi"> -->
+                        <p>pub3</p>
+                    </div>
+                </div>
+        </aside>
+
+        <script src="script.js"></script>
 </body>
 
 </html>
