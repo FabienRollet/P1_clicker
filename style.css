@@ -42,20 +42,14 @@ nav>ul:first-child {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    /* display: none; */
 }
-
-
 
 nav>ul>li>img{ /* sound img*/
     width:2rem;
-    /* display: none; */
 }
 
 nav>ul>li>a>img{ /*social network img*/
     width:2rem;
-    /* display: none; */
-
 }
 
 nav>ul:last-child {
@@ -63,11 +57,8 @@ nav>ul:last-child {
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    /* display: none; */
 }
-
 /*END NAVBAR STYLE*/
-
 
 ul {
     display: grid;
@@ -110,6 +101,13 @@ ul {
     bottom: -3.3rem;
     left: 0%;
     transform: rotate(180deg);
+}
+
+.navbar{            /* Navbar pop-up */
+    display: none;
+}
+.navbar.open {
+    display:block;
 }
 
 .how-to-play {
@@ -156,6 +154,7 @@ section>p {
     text-align: center;
     background-color: #70b3e1;
     padding-top: 2rem;
+    opacity: 70%;
     padding-bottom: 2rem;
     font-weight: bolder;
   } 
@@ -226,7 +225,7 @@ ul {
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 20vh;
+        background-size: 100vw 22vh;
         gap:10px
     }
     nav>ul:first-child {
@@ -241,7 +240,38 @@ ul {
         list-style-type: none;
         flex-direction: row;
         justify-content: center;
-        gap: 7px;
-        padding-right: 2rem;
+        gap: 9px;
+        padding-right: 5rem;
+    }
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: auto;
+    }
+    .autoclicker{
+        grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    }
+    .midle{
+        grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url("https//www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+    background-size: 550px 750px;
+    border: 45px solid ;
+    border-image: url("/assets/images/bordure.png") 8%;
+    
+    }
+    .upgrade{
+        grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    }
+    .side-bar{
+        display: none;
+    }
+
+    section>p{
+        margin-top: 3rem;
     }
 }    
