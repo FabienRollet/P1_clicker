@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
 
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
 
 }
 
@@ -16,7 +16,7 @@ body {
 /*START NAVBAR STYLE*/
 
 
-h2{
+h2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,8 +46,9 @@ nav>ul:first-child {
     list-style-type: none;
 }
 
-nav>ul>li>img{ /* sound img*/
-    width:2rem;
+nav>ul>li>img {
+    /* sound img*/
+    width: 2rem;
 }
 
 nav>ul>li>a>img {
@@ -61,35 +62,8 @@ nav>ul:last-child {
     justify-content: center;
     list-style-type: none;
 }
+
 /*END NAVBAR STYLE*/
-
-ul {
-    display: grid;
-    grid-template-columns: 50px auto auto auto;
-    grid-template-rows: repeat(4, auto);
-    text-align: right;
-    gap: 0.5rem;
-    padding: 1rem;
-}
-
-.side-bar {
-    grid-row-start: 1;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-columns: 10rem;
-    width: 4rem;
-
-}
-
-.upgradeList>li {
-    list-style-type: none;
-    background-size: 3rem, 5rem;
-    background-repeat: no-repeat, no-repeat;
-    background-position: center;
-    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
-    padding-top: 5rem;
-}
 
 .barreHaut {
     width: 100%;
@@ -106,11 +80,13 @@ ul {
     transform: rotate(180deg);
 }
 
-.navbar{            /* Navbar pop-up */
+.navbar {
+    /* Navbar pop-up */
     display: none;
 }
+
 .navbar.open {
-    display:block;
+    display: block;
 }
 
 .how-to-play {
@@ -160,7 +136,7 @@ section>p {
     opacity: 70%;
     padding-bottom: 2rem;
     font-weight: bolder;
-  } 
+}
 
 .croissant-img:active {
     transition: all 0.1s linear;
@@ -168,16 +144,28 @@ section>p {
 }
 
 /*AUTOCLICKER*/
-ul {
+.autoclicker-container ul {
     list-style-type: none;
+    padding-left: 1rem;
 }
+
+.autoclicker-container {
+    border: 1px solid red;
+    display: inline-grid;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: auto;
+    justify-content: left;
+    align-items: end;
+}
+
 .autoClicker {
+    border: 1px solid red;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 5rem 100px 100px;
+    grid-template-columns: 5rem 25vw 25vw;
     grid-template-rows: 40px 40px;
-    grid-template-areas: "picture production production" 
-                         "picture lvl costForNextLevel";
+    grid-template-areas: "picture production production"
+    "picture lvl costForNextLevel";
     justify-items: stretch;
     align-items: stretch;
 }
@@ -198,6 +186,7 @@ ul {
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
 }
+
 .level {
     padding-top: 0.5rem;
     text-align: center;
@@ -213,16 +202,58 @@ ul {
     grid-area: costForNextLevel;
 }
 
+.side-bar-right {
+    border: 1px solid red;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-columns: 10rem;
+    width: 4rem;
+    transform: rotate(180deg);
+}
+
+/*Upgrade*/
+.upgrade ul {
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    text-align: right;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.side-bar {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 10rem;
+    width: 4rem;
+
+}
+
+.upgradeList>li {
+    list-style-type: none;
+    background-size: 3rem, 5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+    padding-top: 5rem;
+}
+/*fin upgrade*/
+
+
 /* RESPONSIVE DESKTOP */
 @media screen and (width >=768px) {
     h2 {
         display: none
     }
-
+    
     header>img {
         display: none
     }
-
+    
     .navbar {
         display: grid;
         color: #FFE5A2;
@@ -231,7 +262,7 @@ ul {
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
         background-size: 100vw 22vh;
-        gap:10px
+        gap: 10px
     }
 
     nav>ul:first-child {
@@ -250,35 +281,40 @@ ul {
         gap: 9px;
         padding-right: 5rem;
     }
-    main{
-        display:grid;
+
+    main {
+        display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
         grid-template-rows: auto;
     }
-    .autoclicker{
+
+    .autoclicker {
         grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
     }
-    .midle{
+
+    .midle {
         grid-column-start: 2;
-    grid-column-end: 3;
-    background-image: url("https//www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
-    background-size: 550px 750px;
-    border: 45px solid ;
-    border-image: url("/assets/images/bordure.png") 8%;
-    
+        grid-column-end: 3;
+        background-image: url("https//www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+        background-size: 550px 750px;
+        border: 45px solid;
+        border-image: url("/assets/images/bordure.png") 8%;
+
     }
-    .upgrade{
+
+    .upgrade {
         grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
     }
-    .side-bar{
+
+    .side-bar {
         display: none;
     }
 
-    section>p{
+    section>p {
         margin-top: 3rem;
     }
-}    
+}
