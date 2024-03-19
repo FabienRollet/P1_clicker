@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Gaegu&family=Luckiest+Guy&family=Madimi+One&family=Orbitron:wght@400..900&display=swap')
+</style>
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin : 0;
 
     font-family: "Raleway", sans-serif;
 
@@ -20,10 +22,19 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    color :#FFE5A2;
+    padding: 2rem ;
+    background-image: url(./assets/images/wood\ navbar.png);
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+    height:3rem;
+
     color: #FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
     background-size: 100vw 20vh;
+
 }
 
 header>img {
@@ -31,9 +42,10 @@ header>img {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 10rem;
+    width: 2rem;
     position: relative;
     bottom: 1.68rem;
+    width:10rem;
 
 
 }
@@ -64,6 +76,53 @@ nav>ul:last-child {
 }
 
 /*END NAVBAR STYLE*/
+
+#nombreClics{
+font-size: 4rem;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+.bandeauClics{
+    display:grid;
+    align-items: center;
+    grid-template-rows: 5rem;
+    background-image:url("assets/images/fond score.jpg") ;
+    background-size: 80%;
+    /*background-color: darkolivegreen;*/
+    
+}
+/*upgrade beginning*/
+ul {
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    text-align: right;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.side-bar {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 5rem;
+    width: 3rem;
+
+}
+
+
+.upgradeList>li {
+    list-style-type: none;
+    background-size: 3rem, 5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+    padding-top: 5rem;
+}
+/*upgrade end*/
+
+
 
 .barreHaut {
     width: 120%;
@@ -115,7 +174,7 @@ nav>ul:last-child {
 }
 
 .how-to-play.open {
-    display: block;
+     display: block;
 }
 
 .who-are-we {
@@ -139,7 +198,8 @@ nav>ul:last-child {
 .croissant-img {
     max-width: 100%;
     display: block;
-    margin: auto auto;
+     margin: auto auto;
+
 }
 
 .money {
@@ -270,6 +330,52 @@ nav>ul:last-child {
     width: 4rem;
 
 }
+/*pub*/
+/*.slide-image{
+   width:5rem;
+    
+}
+.carousel{
+    display: inline-flex;
+    justify-content: center;
+    
+    
+    
+}
+.carousel { 
+    position: relative;
+	width: 270px; 
+	height: 160px; 
+	overflow: hidden; 
+	background-color: #cdcdcd; 
+    
+  
+} 
+
+.carousel-item .slide-image { 
+	width: 270px; 
+	height: 160px; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+} 
+
+.carousel-item { 
+	position: absolute; 
+	width: 100%; 
+	height: 270px; 
+	border: none; 
+	top: 0; 
+	left: 100%; 
+} 
+
+.carousel-item.active { 
+	left: 0; 
+	transition: all 0.3s ease-out; 
+} 
+
+.carousel-item div { 
+	height: 100%; 
+} */
 
 .upgradeList>li {
     list-style-type: none;
@@ -279,6 +385,13 @@ nav>ul:last-child {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     padding-top: 5rem;
 }
+   .upgradeList>li:active {
+    transition: all 0.1s linear;
+    transform: scale(0.95);
+    
+   }
+
+
 /*fin upgrade*/
 
 
