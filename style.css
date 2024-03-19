@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Gaegu&family=Luckiest+Guy&family=Madimi+One&family=Orbitron:wght@400..900&display=swap')
+</style>
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin : 0;
 
     font-family: "Raleway",sans-serif;
 
@@ -20,18 +22,21 @@ h2{
     align-items: center;
     justify-content: center;
     color :#FFE5A2;
-    padding: 3rem;
+    padding: 2rem ;
     background-image: url(./assets/images/wood\ navbar.png);
-    background-size: 100vw 19vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 60vh;
+    height:3rem;
 }
 
 header>img{ /*scroll down menu img*/
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 10rem;
+    width: 2rem;
     position: relative;
     bottom: 1.68rem;
+    width:10rem;
 
 
 }
@@ -61,8 +66,21 @@ nav>ul:last-child {
 }
 
 /*END NAVBAR STYLE*/
-
-
+#nombreClics{
+font-size: 4rem;
+font-family:Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+.bandeauClics{
+    display:grid;
+    align-items: center;
+    grid-template-rows: 5rem;
+    background-image:url("assets/images/fond score.jpg") ;
+    background-size: 80%;
+    /*background-color: darkolivegreen;*/
+    
+}
+/*upgrade beginning*/
 ul {
     display: grid;
     grid-template-columns: 50px auto auto auto;
@@ -77,8 +95,8 @@ ul {
     grid-row-end: 5;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-template-columns: 10rem;
-    width: 4rem;
+    grid-template-columns: 5rem;
+    width: 3rem;
 
 }
 
@@ -91,6 +109,7 @@ ul {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     padding-top: 5rem;
 }
+/*upgrade end*/
 
 .barreHaut {
     width : 100%;
@@ -121,7 +140,7 @@ ul {
 }
 
 .how-to-play.open {
-    display: block;
+     display: block;
 }
 
 .who-are-we {
@@ -142,9 +161,9 @@ ul {
 }
 
 .croissant-img {
-    max-width: 600px;
+    max-width: 100%;
     display: block;
-    margin: 2rem auto;
+   /* margin: 2rem auto;*/
 }
 
 section>p {
@@ -200,6 +219,52 @@ ul {
     height: 50%;
     object-fit: cover;
 }
+/*pub*/
+.slide-image{
+   width:5rem;
+    
+}
+.carousel{
+    display: inline-flex;
+    justify-content: center;
+    
+    
+    
+}
+.carousel { 
+    position: relative;
+	width: 270px; 
+	height: 160px; 
+	overflow: hidden; 
+	background-color: #cdcdcd; 
+    
+  
+} 
+
+.carousel-item .slide-image { 
+	width: 270px; 
+	height: 160px; 
+	background-size: cover; 
+	background-repeat: no-repeat; 
+} 
+
+.carousel-item { 
+	position: absolute; 
+	width: 100%; 
+	height: 270px; 
+	border: none; 
+	top: 0; 
+	left: 100%; 
+} 
+
+.carousel-item.active { 
+	left: 0; 
+	transition: all 0.3s ease-out; 
+} 
+
+.carousel-item div { 
+	height: 100%; 
+} 
 
 /* RESPONSIVE DESKTOP */
 @media screen and (width >=768px) {

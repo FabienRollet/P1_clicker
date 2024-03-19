@@ -7,14 +7,44 @@
     <link href="style.css" rel="stylesheet">
     <title>Croissant cliker !</title>
     <link rel="shortcut icon" href="assets/images/cwaso2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
     <header> <!-- NAV BAR-->
         <h2 class="menu">Menu</h2>
-        <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">
-        <nav class="navbar">
-            <ul>
+        <!-- <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">-->
+        <nav class="navbar"> <!--ADVERTISING -->
+            <aside>
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                url('assets/images/pub-wildEats.jpg');">
+                            <!-- <p>pub1</p>-->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                    url('assets/images/pub-wildEats.jpg');">
+                            <!--<p>pub2</p>-->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                    url('assets/images/pub-wildTrombi.jpg');">
+                            <!--<p>pub3</p>-->
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <section>
+                <p class="bandeauClics">
+                    <span id="nombreClics">0</span> croissant(s)
+                </p>
+            </section>
+            <!-- <ul>
 
                 <li onclick="togglePopup1()"><a href="how-to-play" ></a>Comment jouer ?</li>
                 <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
@@ -27,9 +57,9 @@
                 <li><a href=""><img src="/assets/images/insta.png" alt="Link to Instagram"></a></li>
                 <li><a href="https://github.com/Gamarin0/P1_clicker"><img src="/assets/images/github.png" alt="Link to Github"></a></li>
             </ul>
-        </nav>
-        <!-- section comment jouer -->
-        <section class="how-to-play">
+        </nav>-->
+            <!-- section comment jouer -->
+            <!-- <section class="how-to-play">
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
 
             <h3>Comment jouer?</h3>
@@ -37,10 +67,10 @@
             <p>Il suffit de cliquer sur le croissant pour rassembler des points. Essaye d’obtenir le plus de points
                 possible!!</p>
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
-        </section>
-        <!-- section Qui sommes nous -->
+        </section>-->
+            <!-- section Qui sommes nous -->
 
-        <section class="who-are-we">
+            <!--<section class="who-are-we">
 
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
             <h3>Qui sommes nous</h3>
@@ -50,24 +80,15 @@
             <img src="" alt="croissant Kevin">
             <img src="" alt="croissant Paul">
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
-        </section>
+        </section>-->
     </header>
     <main>
 
-        <!--CROISSANT AND COUNTER-->
-        <section>
 
-            <h1 class="counter"></h1>
-            <p>
-                Vous avez cliquez <span id="nombreClics">0</span>     fois.
-              </p>
-            <img id="boutonClic" class="croissant-img" src="/P1_clicker/assets/images/cwaso.png" alt="a clickable croissant ">
-            
-        </section>
 
         <!--AUTOCLICKER-->
 
-        <section class="autoclicker">
+        <!-- <section class="autoclicker">
             <ul>
                 <li class="firstAutoClicker">
                     <section class="autoclickerPicture">
@@ -102,11 +123,12 @@
                 <p>*level*</p>
                 <p>*cost*</p>
             </article>
-        </section>
+        </section>-->
 
 
         <!--UPGRADE-->
-        
+
+
         <section class=upgrade>
             <ul class="upgradeList">
                 <img class="side-bar" src="/assets/images/barre laterale.png" alt="test">
@@ -122,38 +144,24 @@
                 <li class="upgradeImg10"></li>
                 <li class="upgradeImg11"></li>
                 <li class="upgradeImg12"></li>
-            
+
             </ul>
 
         </section>
+        <!--CROISSANT AND COUNTER-->
+        <section>
 
+            <h1 class="counter"></h1>
+
+            <img id="boutonClic" class="croissant-img" src="/assets/images/cwaso.png" alt="a clickable croissant ">
+
+        </section>
 
     </main>
-    
-    <!--ADVERTISING -->
-    <aside>
-        <div class="carousel">
-            <div class="carousel-item">
-                <div class="slide-image">
-                    <!-- <img src="assets/images/pub-wildEats.jpg" alt="pub projet wildEats"> -->
-                    <p>pub1</p>
 
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-image">
-                        <!-- <img src="assets/images/pub-wildQuizz.jpg" alt="pub projet wildQuizz"> -->
-                        <p>pub2</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-image">
-                        <!-- <img src="assets/images/pub-wildTrombi.jpg" alt="pub projet wildTrombi"> -->
-                        <p>pub3</p>
-                    </div>
-                </div>
-        </aside>
 
-        <script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
