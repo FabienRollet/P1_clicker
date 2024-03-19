@@ -6,7 +6,7 @@
     box-sizing: border-box;
     margin : 0;
 
-    font-family: "Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
 
 }
 
@@ -14,22 +14,31 @@
 body {
     background-color: #FFE5A2;
 }
+
 /*START NAVBAR STYLE*/
 
 
-h2{
+h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+
     color :#FFE5A2;
     padding: 2rem ;
     background-image: url(./assets/images/wood\ navbar.png);
     background-repeat: no-repeat;
     background-size: 100vw 60vh;
     height:3rem;
+
+    color: #FFE5A2;
+    padding: 3rem;
+    background-image: url(./assets/images/wood\ navbar.png);
+    background-size: 100vw 20vh;
+
 }
 
-header>img{ /*scroll down menu img*/
+header>img {
+    /*scroll down menu img*/
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -46,26 +55,28 @@ nav>ul:first-child {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    list-style-type: none;
 }
 
-
-
-nav>ul>li>img{ /* sound img*/
-    width:2rem;
+nav>ul>li>img {
+    /* sound img*/
+    width: 2rem;
 }
 
-nav>ul>li>a>img{ /*social network img*/
-    width:2rem;
-
+nav>ul>li>a>img {
+    /*social network img*/
+    width: 2rem;
 }
 
 nav>ul:last-child {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    list-style-type: none;
 }
 
 /*END NAVBAR STYLE*/
+
 #nombreClics{
 font-size: 4rem;
 font-family:Arial, Helvetica, sans-serif;
@@ -111,19 +122,30 @@ ul {
 }
 /*upgrade end*/
 
+
+
 .barreHaut {
-    width : 100%;
+    width: 100%;
     position: relative;
     top: -18%;
     left: 0%;
 }
 
 .barreBas {
-    width : 100%;
+    width: 100%;
     position: absolute;
     bottom: -3.3rem;
     left: 0%;
     transform: rotate(180deg);
+}
+
+.navbar {
+    /* Navbar pop-up */
+    display: none;
+}
+
+.navbar.open {
+    display: block;
 }
 
 .how-to-play {
@@ -163,61 +185,115 @@ ul {
 .croissant-img {
     max-width: 100%;
     display: block;
-   /* margin: 2rem auto;*/
+
+
+
+    margin: auto auto;
+
 }
 
 section>p {
     text-align: center;
-  } 
+    background-color: #70b3e1;
+    padding-top: 2rem;
+    opacity: 70%;
+    padding-bottom: 2rem;
+    font-weight: bolder;
+}
 
-.croissant-img:hover {
-    transform: scale(1.2);
+.croissant-img:active {
+    transition: all 0.1s linear;
+    transform: scale(0.95);
 }
 
 /*AUTOCLICKER*/
-ul {
+.autoclicker-container ul {
     list-style-type: none;
+    padding-left: 1rem;
 }
-.firstAutoClicker{
+
+.autoclicker-container {
+    border: 1px solid red;
     display: inline-grid;
-    grid-template-columns: 3rem 100px 100px;
+    grid-template-columns: 1fr 50px;
+    grid-template-rows: auto;
+    justify-content: left;
+    align-items: end;
+}
+
+.autoClicker {
+    border: 1px solid red;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 5rem 25vw 25vw;
     grid-template-rows: 40px 40px;
-    grid-template-areas: "picture production production" "picture lvl costForNextLevel";
+    grid-template-areas: "picture production production"
+    "picture lvl costForNextLevel";
     justify-items: stretch;
     align-items: stretch;
 }
 
-.autoclickerPicture{
-    border: 1px solid black;
+.autoClickerPicture {
+    position: relative;
+    background-image: url("assets/images/upgradeGrandma.jpg");
+    background-size: cover;
+    background-position: center;
+    border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
-.production{
+
+.production {
+    padding-top: 0.5rem;
+    text-align: center;
     border: 1px solid black;
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
 }
-.level{
+
+.level {
+    padding-top: 0.5rem;
+    text-align: center;
     border: 1px solid black;
     grid-area: lvl;
 }
-.costForNextLevel{
+
+.costForNextLevel {
+    padding-top: 0.5rem;
+    text-align: center;
     border: 1px solid black;
     border-radius: 0px 0px 40px 0px;
     grid-area: costForNextLevel;
 }
-.cadreImgUprade{
-    
-    background-color: transparent;
-    position: relative;
-    z-index: 1;
+
+.side-bar-right {
+    border: 1px solid red;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-columns: 10rem;
     width: 4rem;
+    transform: rotate(180deg);
 }
-.grandMa{
-    position: relative;
-    top: -40px; left: -5px;
+
+/*Upgrade*/
+.upgrade ul {
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    text-align: right;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.side-bar {
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: 10rem;
     width: 4rem;
-    height: 50%;
-    object-fit: cover;
+
 }
 /*pub*/
 .slide-image{
@@ -266,37 +342,88 @@ ul {
 	height: 100%; 
 } 
 
+.upgradeList>li {
+    list-style-type: none;
+    background-size: 3rem, 5rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center;
+    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+    padding-top: 5rem;
+}
+/*fin upgrade*/
+
+
 /* RESPONSIVE DESKTOP */
 @media screen and (width >=768px) {
     h2 {
-        display:none
+        display: none
     }
-    header>img{
-        display:none
+    
+    header>img {
+        display: none
     }
-    .navbar{
+    
+    .navbar {
         display: grid;
-        color :#FFE5A2;
+        color: #FFE5A2;
         grid-template-rows: 1fr;
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 20vh;
-        gap:10px
+        background-size: 100vw 22vh;
+        gap: 10px
     }
+
     nav>ul:first-child {
-        display:flex;
+        display: flex;
         list-style-type: none;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     }
-    nav>ul:last-child{
-        display:flex;
+
+    nav>ul:last-child {
+        display: flex;
         list-style-type: none;
         flex-direction: row;
         justify-content: center;
-        gap: 7px;
-        padding-right: 2rem;
+        gap: 9px;
+        padding-right: 5rem;
     }
 
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .autoclicker {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+    }
+
+    .midle {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-image: url("https//www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+        background-size: 550px 750px;
+        border: 45px solid;
+        border-image: url("/assets/images/bordure.png") 8%;
+
+    }
+
+    .upgrade {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+
+    .side-bar {
+        display: none;
+    }
+
+    section>p {
+        margin-top: 3rem;
+    }
+}
