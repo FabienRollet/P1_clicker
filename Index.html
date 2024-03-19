@@ -7,15 +7,19 @@
     <link href="style.css" rel="stylesheet">
     <title>Croissant cliker !</title>
     <link rel="shortcut icon" href="assets/images/cwaso2.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
-    <header> <!-- NAV BAR-->
+    <header> 
+      <!-- NAV BAR-->
+        <nav class="navbar">  
         <h2 onclick="togglePopup0()" class="menu"><a href="navbar"></a>Menu</h2>
         <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">
         <nav class="navbar">
             <ul>
-
                 <li onclick="togglePopup1()"><a href="how-to-play"></a>Comment jouer ?</li>
                 <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
                 <li><img src="/assets/images/Speaker_Icon.svg.png" alt="Activer le son"></li>
@@ -30,19 +34,19 @@
                             alt="Link to Github"></a></li>
             </ul>
         </nav>
-        <!-- section comment jouer -->
-        <section class="how-to-play">
-            <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
+            <!-- section comment jouer -->
+            <section class="how-to-play">
+              <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
 
             <h3>Comment jouer?</h3>
 
             <p>Il suffit de cliquer sur le croissant pour rassembler des points. Essaye d’obtenir le plus de points
                 possible!!</p>
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
-        </section>
-        <!-- section Qui sommes nous -->
+            </section>
+            <!-- section Qui sommes nous -->
 
-        <section class="who-are-we">
+            <section class="who-are-we">
 
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
             <h3>Qui sommes nous</h3>
@@ -54,11 +58,35 @@
             <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
         </section>
     </header>
+      <!--ADVERTISING -->
+            <aside>
+                <!--<div class="carousel">
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                url('assets/images/pub-wildEats.jpg');">-->
+                            <!-- <p>pub1</p>-->
+                       <!-- </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                    url('assets/images/pub-wildEats.jpg');">-->
+                            <!--<p>pub2</p>-->
+                       <!-- </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slide-image" style="background-image: 
+                    url('assets/images/pub-wildTrombi.jpg');">-->
+                            <!--<p>pub3</p>
+                        </div>
+                    </div>
+                </div>-->
+            </aside>
     <main>
-
+           
         <!--AUTOCLICKER-->
 
         <section class="autoclicker-container">
+
             <ul>
                 <li class="autoClicker" id="autoClicker1">
                     <section class="autoClicker1Picture"></section>
@@ -84,10 +112,12 @@
                     <p class="level">lv <span>1</span></p>
                     <p class="costForNextLevel"><span>1</span>$</p>
                 </li>
-           
             </ul>
-            <img class="side-bar-right" src="/assets/images/barre laterale.png" alt="test">
+        </section>-->
+
+        <img class="side-bar-right" src="/assets/images/barre laterale.png" alt="test">
         </section>
+
 
         <!--CROISSANT AND COUNTER-->
         <section class="midle">
@@ -99,8 +129,6 @@
             <img id="boutonClic" class="croissant-img" src="/assets/images/cwaso.png" alt="a clickable croissant ">
 
         </section>
-
-
 
         <!--UPGRADE-->
 
@@ -121,12 +149,7 @@
                 <li class="upgradeImg12"></li>
 
             </ul>
-
-        </section>
-
-
-    </main>
-
+          
     <!--ADVERTISING -->
     <aside>
         <div class="carousel">
@@ -149,7 +172,7 @@
                     </div>
                 </div>
     </aside>
-
+          
     <script src="script.js"></script>
 </body>
 
