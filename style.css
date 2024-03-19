@@ -66,18 +66,29 @@ nav>ul:last-child {
 /*END NAVBAR STYLE*/
 
 .barreHaut {
-    width: 100%;
+    width: 120%;
     position: relative;
-    top: -18%;
-    left: 0%;
+    transform: translate(-8%, -140%)
+}
+@media screen and (width >=768px) {
+    .barreHaut {
+            width: 112%;
+            transform: translate(-5%, -105%);
+    }
 }
 
 .barreBas {
-    width: 100%;
-    position: absolute;
-    bottom: -3.3rem;
+    width: 120%;
+    position: relative;
+    bottom: -1rem;
     left: 0%;
-    transform: rotate(180deg);
+    transform: translate(-8%, 100%) rotate(180deg);
+}
+@media screen and (width >=768px) {
+    .barreBas {
+            width: 115%;
+            transform: translate(-6%, 100%) rotate(180deg);
+    }
 }
 
 .navbar {
@@ -99,6 +110,7 @@ nav>ul:last-child {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
     display: none;
 }
 
@@ -116,6 +128,7 @@ nav>ul:last-child {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
     display: none;
 }
 
@@ -129,7 +142,7 @@ nav>ul:last-child {
     margin: auto auto;
 }
 
-section>p {
+.money {
     text-align: center;
     background-color: #70b3e1;
     padding-top: 2rem;
@@ -167,6 +180,7 @@ section>p {
     grid-template-areas: "picture production production"
     "picture lvl costForNextLevel";
 }
+
 
 .autoClicker1Picture {
     position: relative;

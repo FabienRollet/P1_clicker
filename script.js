@@ -11,12 +11,14 @@ function togglePopup2 () {
     let popup = document.querySelector(".who-are-we");
     popup.classList.toggle("open");
 }
+
 /*clic croissant*/
+
 let nombreClics = 0;
 
 function comptage() {
   nombreClics++;
-  document.getElementById("nombreClics").textContent   = nombreClics;
+  document.getElementById("nombreClics").textContent = nombreClics;
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
