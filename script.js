@@ -12,11 +12,11 @@ function togglePopup2 () {
     popup.classList.toggle("open");
 }
 
-var nombreClics = 0;
+let nombreClics = 0;
 
 function comptage() {
   nombreClics++;
-  document.getElementById("nombreClics").textContent   = nombreClics;
+  document.getElementById("nombreClics").textContent = nombreClics;
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
