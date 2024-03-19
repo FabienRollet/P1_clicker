@@ -12,7 +12,7 @@ function togglePopup2 () {
     popup.classList.toggle("open");
 }
 
-var nombreClics = 0;
+let nombreClics = 0;
 
 function comptage() {
   nombreClics++;
@@ -20,3 +20,19 @@ function comptage() {
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
+
+/*autocliker*/
+let prodAutoClicker1 = 0;
+let lvlAutoclicker1 = 0;
+let costAutoclicker1 = 0;
+function upValueAutoClicker(){
+  prodAutoClicker1++;
+  lvlAutoclicker1++;
+  costAutoclicker1++;
+  document.getElementById("prodAutoClicker1").textContent = prodAutoClicker1;
+  document.getElementById("lvlAutoclicker1").textContent = lvlAutoclicker1;
+  document.getElementById("costAutoclicker1").textContent = costAutoclicker1;
+}
+
+document.getElementById("autoClicker1").addEventListener("click", upValueAutoClicker);
+
