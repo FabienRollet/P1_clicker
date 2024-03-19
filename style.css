@@ -125,18 +125,29 @@ ul {
 
 
 .barreHaut {
-    width: 100%;
+    width: 120%;
     position: relative;
-    top: -18%;
-    left: 0%;
+    transform: translate(-8%, -140%)
+}
+@media screen and (width >=768px) {
+    .barreHaut {
+            width: 112%;
+            transform: translate(-5%, -105%);
+    }
 }
 
 .barreBas {
-    width: 100%;
-    position: absolute;
-    bottom: -3.3rem;
+    width: 120%;
+    position: relative;
+    bottom: -1rem;
     left: 0%;
-    transform: rotate(180deg);
+    transform: translate(-8%, 100%) rotate(180deg);
+}
+@media screen and (width >=768px) {
+    .barreBas {
+            width: 115%;
+            transform: translate(-6%, 100%) rotate(180deg);
+    }
 }
 
 .navbar {
@@ -158,6 +169,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
     display: none;
 }
 
@@ -175,6 +187,7 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 99;
     display: none;
 }
 
@@ -189,7 +202,7 @@ ul {
 
 }
 
-section>p {
+.money {
     text-align: center;
     background-color: #70b3e1;
     padding-top: 2rem;
@@ -212,7 +225,7 @@ section>p {
 .autoclicker-container {
     border: 1px solid red;
     display: inline-grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 85% 60px;
     grid-template-rows: auto;
     justify-content: left;
     align-items: end;
@@ -222,23 +235,45 @@ section>p {
     border: 1px solid red;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 5rem 25vw 25vw;
+    grid-template-columns: 4.5rem 25vw 25vw;
     grid-template-rows: 40px 40px;
     grid-template-areas: "picture production production"
     "picture lvl costForNextLevel";
-    justify-items: stretch;
-    align-items: stretch;
 }
 
-.autoClickerPicture {
+
+.autoClicker1Picture {
     position: relative;
-    background-image: url("assets/images/upgradeGrandma.jpg");
+    background-image: url("assets/images/grandMa.png");
     background-size: cover;
     background-position: center;
     border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
-
+.autoClicker2Picture {
+    position: relative;
+    background-image: url("assets/images/boulangerie.jpg");
+    background-size: cover;
+    background-position: center;
+    border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
+    grid-area: picture;
+}
+.autoClicker3Picture {
+    position: relative;
+    background-image: url("assets/images/computerAutoclicker.png");
+    background-size: cover;
+    background-position: center;
+    border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
+    grid-area: picture;
+}
+.autoClicker4Picture {
+    position: relative;
+    background-image: url("assets/images/french-croissant-with-parachute.jpg");
+    background-size: cover;
+    background-position: center;
+    border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
+    grid-area: picture;
+}
 .production {
     padding-top: 0.5rem;
     text-align: center;
@@ -256,9 +291,10 @@ section>p {
 
 .costForNextLevel {
     padding-top: 0.5rem;
+    padding-left: 0.4rem;
     text-align: center;
     border: 1px solid black;
-    border-radius: 0px 0px 40px 0px;
+    border-radius: 0px 0px 10px 0px;
     grid-area: costForNextLevel;
 }
 
@@ -269,9 +305,11 @@ section>p {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-template-columns: 10rem;
-    width: 4rem;
+    width: auto;
+    height: 35rem;
     transform: rotate(180deg);
 }
+/*fin autocliker */
 
 /*Upgrade*/
 .upgrade ul {
