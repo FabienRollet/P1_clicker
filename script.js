@@ -16,13 +16,24 @@ let nombreClics = 0;
 
 function comptage() {
   nombreClics++;
-  document.getElementById("nombreClics").textContent   = nombreClics;
+  document.getElementById("nombreClics").textContent = nombreClics;
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
+// fin du clic croissant
 
+//debut des upgrade clic
+let nombreClicsUpgradeImg = 0;
+
+function increaseTheValueBy1000() {
+  if ( "nombreClics" === 1000){
+	"nombreClics"="nombreClics"+10
+  };
+  document.getElementById("nombreClicsUpgradeImg").textContent = nombreClics;
+}
+document.getElementById("upgradeImg1").addEventListener("click", increaseTheValueBy1000);
 // debut carroussel
-window.onload = function () { 
+/*window.onload = function () { 
 	let slides = 
 		document.getElementsByClassName('carousel-item'); 
 
@@ -49,4 +60,4 @@ window.onload = function () {
 			} 
 		} 
 	}, 1500); 
-};
+};*/
