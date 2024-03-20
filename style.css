@@ -141,6 +141,11 @@ nav>ul:last-child {
     display: none;
 }
 
+/* .personalisedCroissant>img{
+    width:16rem;
+    justify-content: space-between;
+} */
+
 .who-are-we.open {
     display: block;
 }
