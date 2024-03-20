@@ -24,8 +24,23 @@ function comptage() {
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
 
-/*autocliker1*/
 
+/*MUSIC */
+let imgMusic = document.getElementsByClassName("imgMusic")[0];
+let music = document.getElementsByClassName("music")[0];
+
+function toggleMusic() {
+    if (music.muted) {
+        music.muted = false;
+        imgMusic.src = "/assets/images/Speaker_Icon.png";
+    } else {
+        music.muted = true;
+        imgMusic.src = "/assets/images/Speaker_muted.png";
+    }
+}
+
+
+/*autocliker1*/
 let prodAutoClicker1 = 0;
 let lvlAutoClicker1 = 0;
 let costAutoClicker1 = 1;
@@ -46,7 +61,7 @@ function upValueAutoClicker1() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 setInterval(() => {
@@ -73,7 +88,7 @@ function upValueAutoClicker2() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 
@@ -102,7 +117,7 @@ function upValueAutoClicker3() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 
@@ -131,7 +146,7 @@ function upValueAutoClicker4() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 

@@ -53,6 +53,10 @@ nav>ul>li>img {
     width: 2rem;
 }
 
+.music {
+    display: none;
+  }
+
 nav>ul>li>a>img {
     /*social network img*/
     width: 2rem;
@@ -165,6 +169,9 @@ section>p {
 .autoclicker-container ul {
     list-style-type: none;
     padding-left: 1rem;
+}
+.menuDeroulant.open {
+    display: none;
 }
 
 .autoclicker-container {
