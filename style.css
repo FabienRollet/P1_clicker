@@ -170,6 +170,9 @@ section>p {
     list-style-type: none;
     padding-left: 1rem;
 }
+.menuDeroulant.open {
+    display: none;
+}
 
 .autoclicker-container {
 
