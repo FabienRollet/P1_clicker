@@ -16,10 +16,10 @@ function togglePopup3 () {
   popup.classList.toggle("open");
 }
 
-let nombreClics = 0;
+let numberClicks = 0;
 function comptage() {
-  nombreClics++;
-  document.getElementById("nombreClics").textContent = nombreClics;
+  numberClicks++;
+  document.getElementById("numberClicks").textContent = numberClicks;
 }
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
