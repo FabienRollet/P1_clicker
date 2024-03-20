@@ -59,7 +59,8 @@
         <!--AUTOCLICKER-->
 
         <section class="autoclicker-container">
-            <ul>
+
+            <ul class="menuDeroulant">
                 <li class="autoClicker" id="autoClicker1">
                     <section class="autoClicker1Picture"></section>
                     <p class="production">prod. <span id="prodAutoClicker1">0</span>/s</p>
@@ -83,18 +84,18 @@
                     <p class="production">prod. <span id="prodAutoClicker4">0</span>/s</p>
                     <p class="level">lv <span id="lvlAutoClicker4">0</span></p>
                     <p class="costForNextLevel"><span id="costAutoClicker4">1000</span> $</p>
+
                 </li>
-           
             </ul>
-            <img class="side-bar-right" src="/assets/images/barre laterale.png" alt="test">
+            <img onclick="togglePopup3()" class="side-bar-right" src="/assets/images/barre laterale.png" alt="test">
         </section>
 
         <!--CROISSANT AND COUNTER-->
         <section class="midle">
 
             <h1 class="counter"></h1>
-            <p>
-                <span id="numberClicks">0</span> $
+            <p class="money">
+                <span id="nombreClics">0</span> $
             </p>
             <img id="boutonClic" class="croissant-img" src="/assets/images/cwaso.png" alt="a clickable croissant ">
 
@@ -154,3 +155,4 @@
 </body>
 
 </html>
+
