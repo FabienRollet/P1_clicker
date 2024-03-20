@@ -155,3 +155,90 @@ setInterval(() => {
 
 /*end autoclicker */
 
+// function hidden upgrade
+
+// let togg1 = document.getElementById("togg1");
+// let upgrade = document.getElementById("upgrade");
+// togg1.addEventListener("click", () => {
+//   if(getComputedStyle(d1).display != "none"){
+//     upgrade.style.display = "none";
+
+//   } else {
+//     upgrade.style.display = "block";
+
+    
+//   }
+// })
+
+// upgrade debloquage compteur
+
+function addValueOfUpgrade1(){
+ numberClicks +=1000;
+ document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg1").addEventListener("click", addValueOfUpgrade1);
+
+function addValueOfUpgrade2(){
+  numberClicks +=2000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+ }
+ document.getElementById("upgradeImg2").addEventListener("click", addValueOfUpgrade2);
+
+ function addValueOfUpgrade3(){
+  numberClicks +=3000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+ }
+ document.getElementById("upgradeImg3").addEventListener("click", addValueOfUpgrade3);
+ 
+ function addValueOfUpgrade4(){
+   numberClicks +=4000;
+   document.getElementById("numberClicks").textContent = numberClicks;
+  }
+  document.getElementById("upgradeImg4").addEventListener("click", addValueOfUpgrade4);
+  function addValueOfUpgrade5(){
+    numberClicks +=5000;
+    document.getElementById("numberClicks").textContent = numberClicks;
+   }
+   document.getElementById("upgradeImg5").addEventListener("click", addValueOfUpgrade5);
+   
+   function addValueOfUpgrade6(){
+     numberClicks +=6000;
+     document.getElementById("numberClicks").textContent = numberClicks;
+    }
+    document.getElementById("upgradeImg6").addEventListener("click", addValueOfUpgrade6);
+   
+    function addValueOfUpgrade7(){
+     numberClicks +=7000;
+     document.getElementById("numberClicks").textContent = numberClicks;
+    }
+    document.getElementById("upgradeImg7").addEventListener("click", addValueOfUpgrade7);
+    
+    function addValueOfUpgrade8(){
+      numberClicks +=8000;
+      document.getElementById("numberClicks").textContent = numberClicks;
+     }
+     document.getElementById("upgradeImg8").addEventListener("click", addValueOfUpgrade8);
+
+     function addValueOfUpgrade9(){
+      numberClicks +=9000;
+      document.getElementById("numberClicks").textContent = numberClicks;
+     }
+     document.getElementById("upgradeImg9").addEventListener("click", addValueOfUpgrade9);
+     
+     function addValueOfUpgrade10(){
+       numberClicks +=10000;
+       document.getElementById("numberClicks").textContent = numberClicks;
+      }
+      document.getElementById("upgradeImg10").addEventListener("click", addValueOfUpgrade10);
+     
+      function addValueOfUpgrade11(){
+       numberClicks +=11000;
+       document.getElementById("numberClicks").textContent = numberClicks;
+      }
+      document.getElementById("upgradeImg11").addEventListener("click", addValueOfUpgrade11);
+      
+      function addValueOfUpgrade12(){
+        numberClicks +=12000;
+        document.getElementById("numberClicks").textContent = numberClicks;
+       }
+       document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgrade12);
