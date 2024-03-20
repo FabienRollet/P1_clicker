@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -78,10 +77,11 @@ nav>ul:last-child {
     top: -18%;
     left: 0%;
 }
+
 @media screen and (width >=768px) {
     .barreHaut {
-            width: 112%;
-            transform: translate(-5%, -105%);
+        width: 112%;
+        transform: translate(-5%, -105%);
     }
 }
 
@@ -92,10 +92,11 @@ nav>ul:last-child {
     left: 0%;
     transform: rotate(180deg);
 }
+
 @media screen and (width >=768px) {
     .barreBas {
-            width: 115%;
-            transform: translate(-6%, 100%) rotate(180deg);
+        width: 115%;
+        transform: translate(-6%, 100%) rotate(180deg);
     }
 }
 
@@ -171,7 +172,7 @@ section>p {
 }
 
 .autoclicker-container {
-    border: 1px solid red;
+
     display: inline-grid;
     grid-template-columns: 85% 60px;
     grid-template-rows: auto;
@@ -180,7 +181,6 @@ section>p {
 }
 
 .autoClicker {
-    border: 1px solid red;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 4.5rem 25vw 25vw;
@@ -188,6 +188,7 @@ section>p {
     grid-template-areas: "picture production production"
     "picture lvl costForNextLevel";
     cursor: pointer;
+
 }
 
 .autoClicker1Picture {
@@ -198,6 +199,7 @@ section>p {
     border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
+
 .autoClicker2Picture {
     position: relative;
     background-image: url("assets/images/boulangerie.jpg");
@@ -206,6 +208,7 @@ section>p {
     border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
+
 .autoClicker3Picture {
     position: relative;
     background-image: url("assets/images/computerAutoclicker.png");
@@ -214,6 +217,7 @@ section>p {
     border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
+
 .autoClicker4Picture {
     position: relative;
     background-image: url("assets/images/french-croissant-with-parachute.jpg");
@@ -222,6 +226,7 @@ section>p {
     border-image: url("assets/images/cadreImgUprade.png") 350 400 220 350 fill/ 30px / 25px;
     grid-area: picture;
 }
+
 .production {
     padding-top: 0.5rem;
     text-align: center;
@@ -247,7 +252,6 @@ section>p {
 }
 
 .side-bar-right {
-    border: 1px solid red;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -257,8 +261,30 @@ section>p {
     height: 35rem;
     transform: rotate(180deg);
 }
+
 /*fin autocliker */
 
+/*modale*/
+/* Style de la modale */
+.modal {
+    display: none; /*Cachée par défaut*/
+    position: fixed; /* Positionnement fixe */
+    z-index: 1; /* Position en avant-plan */
+    left: 10%;
+    top: 40%;
+     }
+  
+  /* Style du contenu de la modale */
+  .modal-content {
+    background-color: #9ac1ce;
+    margin: 15% auto; /* Centrer verticalement et horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 50%;
+  }
+  
+/* fin modale */
 
 /*Upgrade*/
 .upgrade ul {
@@ -280,14 +306,67 @@ section>p {
 
 }
 
-.upgradeList>li {
+#upgradeList>li:active {
+    transition: all 0.1s linear;
+    transform: scale(0.95);
+}
+
+#upgradeList>li {
     list-style-type: none;
     background-size: 3rem, 5rem;
     background-repeat: no-repeat, no-repeat;
     background-position: center;
-    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     padding-top: 5rem;
 }
+
+#upgradeImg1 {
+    background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg2 {
+    background-image: url("assets/images/upgrade 2.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg3 {
+    background-image: url("assets/images/upgrade 4.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg4 {
+    background-image: url("assets/images/upgrade 6.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg5 {
+    background-image: url("assets/images/upgrade 8.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg6 {
+    background-image: url("assets/images/upgrade 9.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg7 {
+    background-image: url("assets/images/upgrade 10.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg8 {
+    background-image: url("assets/images/upgrade 11.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg9 {
+    background-image: url("assets/images/upgrade 12.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg10 {
+    background-image: url("assets/images/upgrade 13.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg11 {
+    background-image: url("assets/images/upgrade 14.png"), url("assets/images/cadre upgrade.png");
+}
+
+#upgradeImg12 {
+    background-image: url("assets/images/upgrade 15.png"), url("assets/images/cadre upgrade.png");
+}
+
 /*fin upgrade*/
 
 
@@ -296,11 +375,11 @@ section>p {
     h2 {
         display: none
     }
-    
+
     header>img {
         display: none
     }
-    
+
     .navbar {
         display: grid;
         color: #FFE5A2;
@@ -365,5 +444,3 @@ section>p {
         margin-top: 3rem;
     }
 }
-
-
