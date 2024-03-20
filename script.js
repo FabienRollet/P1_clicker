@@ -150,3 +150,5 @@ setInterval(() => {
 //     updateDisplay(index);
 //   }, 1000);
 // });
+
+/*end autoclicker */
