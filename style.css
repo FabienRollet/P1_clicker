@@ -25,6 +25,7 @@ h2 {
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
     background-size: 100vw 20vh;
+    cursor: pointer;
 }
 
 header>img {
@@ -45,6 +46,7 @@ nav>ul:first-child {
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    cursor: pointer;
 }
 
 nav>ul>li>img {
@@ -181,6 +183,7 @@ section>p {
     grid-template-rows: 40px 40px;
     grid-template-areas: "picture production production"
     "picture lvl costForNextLevel";
+    cursor: pointer;
 }
 
 .autoClicker1Picture {
