@@ -153,3 +153,5 @@ setInterval(() => {
 //   }, 1000);
 // });
 
+/*end autoclicker */
+
