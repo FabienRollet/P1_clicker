@@ -60,7 +60,7 @@ let costAutoClicker2 = 10;
 
 document.getElementById("autoClicker2").addEventListener("click", upValueAutoClicker2);
 function upValueAutoClicker2() {
-  if (numberClicks >= costAutoClicker1) {
+  if (numberClicks >= costAutoClicker2) {
     prodAutoClicker2 += 10;
     lvlAutoClicker2++;
     document.getElementById("numberClicks").textContent = (numberClicks -= costAutoClicker2);
@@ -89,7 +89,7 @@ let costAutoClicker3 = 100;
 document.getElementById("autoClicker3").addEventListener("click", upValueAutoClicker3);
 
 function upValueAutoClicker3() {
-  if (numberClicks >= costAutoClicker1) {
+  if (numberClicks >= costAutoClicker3) {
     prodAutoClicker3 += 100;
     lvlAutoClicker3++;
     document.getElementById("numberClicks").textContent = (numberClicks -= costAutoClicker3);
@@ -118,7 +118,7 @@ let costAutoClicker4 = 1000;
 document.getElementById("autoClicker4").addEventListener("click", upValueAutoClicker4);
 
 function upValueAutoClicker4() {
-  if (numberClicks >= costAutoClicker1) {
+  if (numberClicks >= costAutoClicker4) {
     prodAutoClicker4 += 1000;
     lvlAutoClicker4++;
     document.getElementById("numberClicks").textContent = (numberClicks -= costAutoClicker4);
@@ -127,14 +127,13 @@ function upValueAutoClicker4() {
     document.getElementById("lvlAutoClicker4").textContent = lvlAutoClicker4;
     document.getElementById("costAutoClicker4").textContent = costAutoClicker4;
   } else {
-    var modal = document.getElementById("myModal");
+    let modal = document.getElementById("myModal");
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
     }, 1000);
   }
 }
-
 
 setInterval(() => {
   document.getElementById("numberClicks").textContent = numberClicks += prodAutoClicker4;
