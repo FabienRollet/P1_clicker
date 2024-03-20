@@ -54,6 +54,10 @@ nav>ul>li>img {
     width: 2rem;
 }
 
+.music {
+    display: none;
+  }
+
 nav>ul>li>a>img {
     /*social network img*/
     width: 2rem;

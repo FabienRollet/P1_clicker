@@ -18,7 +18,11 @@
 
                 <li onclick="togglePopup1()"><a href="how-to-play"></a>Comment jouer ?</li>
                 <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
-                <li><img src="/assets/images/Speaker_Icon.svg.png" alt="Activer le son"></li>
+                <li><audio class="music" controls autoplay loop muted>
+                    <source src="/assets/sound/8-bit-dream-land-142093.mp3" type="audio/mpeg">
+                  Your browser does not support the audio.
+                  </audio>
+                    <img class = "imgMusic" src="/assets/images/Speaker_muted.png" alt="Activer le son" onclick="toggleMusic()"></li>
             </ul>
             <ul>
                 <li><a href=""><img src="/assets/images/faceboo.png" alt="Link to facebook"></a></li>
@@ -26,8 +30,7 @@
                 <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/assets/images/Youtube.png"
                             alt="Link to YouTube"></a></li>
                 <li><a href=""><img src="/assets/images/insta.png" alt="Link to Instagram"></a></li>
-                <li><a href="https://github.com/Gamarin0/P1_clicker"><img src="/assets/images/github.png"
-                            alt="Link to Github"></a></li>
+                <li><a href="https://github.com/Gamarin0/P1_clicker"><img src="/assets/images/github.png" alt="Link to Github"></a></li>
             </ul>
         </nav>
         <!-- section comment jouer -->
@@ -37,7 +40,7 @@
             <h3>Comment jouer?</h3>
 
             <ul>
-                <li>Cliquez sur le croissant pour gagner des $.</li>
+                <li>Cliquez sur le croissant pour gagner des KryptoKroissants.</li>
                 <li>Achetez des autoclickers pour générer des $ passivement.</li>
                 <li>Achetez des améliorations pour gagner encore plus de $ !</li>
             </ul>

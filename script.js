@@ -24,6 +24,20 @@ function comptage() {
 
 document.getElementById("boutonClic").addEventListener("click", comptage);
 
+/*MUSIC */
+let imgMusic = document.getElementsByClassName("imgMusic")[0];
+let music = document.getElementsByClassName("music")[0];
+
+function toggleMusic() {
+    if (music.muted) {
+        music.muted = false;
+        imgMusic.src = "/assets/images/Speaker_Icon.png";
+    } else {
+        music.muted = true;
+        imgMusic.src = "/assets/images/Speaker_muted.png";
+    }
+}
+
 // /*autocliker1*/
 
 let prodAutoClicker1 = 0;
