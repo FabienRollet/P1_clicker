@@ -11,6 +11,10 @@ function togglePopup2 () {
     let popup = document.querySelector(".who-are-we");
     popup.classList.toggle("open");
 }
+function togglePopup3 () {
+  let popup = document.querySelector(".menuDeroulant");
+  popup.classList.toggle("open");
+}
 
 let nombreClics = 0;
 

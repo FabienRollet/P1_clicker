@@ -170,6 +170,10 @@ nav>ul:last-child {
     justify-content: left;
     align-items: end;
 }
+.menuDeroulant.open {
+    transition: 1s max-height;
+    display: none;
+}
 
 .autoClicker {
     border: 1px solid red;
