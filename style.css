@@ -167,7 +167,6 @@ section>p {
 }
 
 .autoclicker-container {
-    border: 1px solid red;
     display: inline-grid;
     grid-template-columns: 85% 60px;
     grid-template-rows: auto;
@@ -176,7 +175,6 @@ section>p {
 }
 
 .autoClicker {
-    border: 1px solid red;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: 4.5rem 25vw 25vw;
@@ -243,7 +241,6 @@ section>p {
 }
 
 .side-bar-right {
-    border: 1px solid red;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-column-start: 2;
@@ -255,6 +252,27 @@ section>p {
 }
 /*fin autocliker */
 
+/*modale*/
+/* Style de la modale */
+.modal {
+    display: none; /*Cachée par défaut*/
+    position: fixed; /* Positionnement fixe */
+    z-index: 1; /* Position en avant-plan */
+    left: 10%;
+    top: 40%;
+     }
+  
+  /* Style du contenu de la modale */
+  .modal-content {
+    background-color: #9ac1ce;
+    margin: 15% auto; /* Centrer verticalement et horizontalement */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    width: 50%;
+  }
+  
+/* fin modale */
 
 /*Upgrade*/
 .upgrade ul {
