@@ -61,7 +61,7 @@ function upValueAutoClicker1() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 setInterval(() => {
@@ -88,7 +88,7 @@ function upValueAutoClicker2() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 
@@ -117,7 +117,7 @@ function upValueAutoClicker3() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 
@@ -146,7 +146,7 @@ function upValueAutoClicker4() {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 1000);
+    }, 2000);
   }
 }
 
