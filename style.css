@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -66,9 +67,10 @@ nav>ul:last-child {
 /*END NAVBAR STYLE*/
 
 .barreHaut {
-    width: 120%;
+    width: 100%;
     position: relative;
-    transform: translate(-8%, -140%)
+    top: -18%;
+    left: 0%;
 }
 @media screen and (width >=768px) {
     .barreHaut {
@@ -78,11 +80,11 @@ nav>ul:last-child {
 }
 
 .barreBas {
-    width: 120%;
-    position: relative;
-    bottom: -1rem;
+    width: 100%;
+    position: absolute;
+    bottom: -3.3rem;
     left: 0%;
-    transform: translate(-8%, 100%) rotate(180deg);
+    transform: rotate(180deg);
 }
 @media screen and (width >=768px) {
     .barreBas {
@@ -142,7 +144,7 @@ nav>ul:last-child {
     margin: auto auto;
 }
 
-.money {
+section>p {
     text-align: center;
     background-color: #70b3e1;
     padding-top: 2rem;
@@ -356,3 +358,5 @@ nav>ul:last-child {
         margin-top: 3rem;
     }
 }
+
+
