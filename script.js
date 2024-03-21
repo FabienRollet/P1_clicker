@@ -16,6 +16,13 @@ function togglePopup3() {
   popup.classList.toggle("open");
 }
 
+let desktopAutoClicker = document.querySelector(".side-bar-right");
+let desktop = window.innerWidth;
+if (desktop<=769){
+  desktopAutoClicker.onclick = null;
+}
+
+
 let numberClicks = 0;
 function comptage() {
   numberClicks++;
