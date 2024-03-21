@@ -136,6 +136,11 @@ nav>ul:last-child {
     display: none;
 }
 
+.personalisedCroissant>img{
+    width:9rem;
+
+} 
+
 .who-are-we.open {
     display: block;
 }
@@ -172,7 +177,6 @@ section>p {
 .autoclicker-container {
 
     display: inline-grid;
-    grid-template-columns: 85% 60px;
     grid-template-rows: auto;
     justify-content: left;
     align-items: end;
@@ -311,7 +315,7 @@ section>p {
 
 #upgradeList>li {
     list-style-type: none;
-    background-size: 3rem, 5rem;
+    
     background-repeat: no-repeat, no-repeat;
     background-position: center;
     padding-top: 5rem;
@@ -319,50 +323,62 @@ section>p {
 
 #upgradeImg1 {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
+    background-size: 4rem, 5rem;
 }
 
 #upgradeImg2 {
-    background-image: url("assets/images/upgrade 2.png"), url("assets/images/cadre upgrade.png");
+    background-image: url("assets/images/upgrade 2.png") , url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg3 {
     background-image: url("assets/images/upgrade 4.png"), url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg4 {
     background-image: url("assets/images/upgrade 6.png"), url("assets/images/cadre upgrade.png");
+    background-size: 6rem, 5rem;
 }
 
 #upgradeImg5 {
     background-image: url("assets/images/upgrade 8.png"), url("assets/images/cadre upgrade.png");
+    background-size: 6rem, 5rem;
 }
 
 #upgradeImg6 {
     background-image: url("assets/images/upgrade 9.png"), url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg7 {
     background-image: url("assets/images/upgrade 10.png"), url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg8 {
     background-image: url("assets/images/upgrade 11.png"), url("assets/images/cadre upgrade.png");
+    background-size: 6rem, 5rem;
 }
 
 #upgradeImg9 {
     background-image: url("assets/images/upgrade 12.png"), url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg10 {
     background-image: url("assets/images/upgrade 13.png"), url("assets/images/cadre upgrade.png");
+    background-size: 7rem, 5rem;
 }
 
 #upgradeImg11 {
     background-image: url("assets/images/upgrade 14.png"), url("assets/images/cadre upgrade.png");
+    background-size: 5rem, 5rem;
 }
 
 #upgradeImg12 {
     background-image: url("assets/images/upgrade 15.png"), url("assets/images/cadre upgrade.png");
+    background-size: 7rem, 5rem;
 }
 
 /*fin upgrade*/
@@ -405,6 +421,11 @@ section>p {
         gap: 9px;
         padding-right: 5rem;
     }
+
+    .personalisedCroissant>img{
+        width:14rem;
+    
+    } 
 
     main {
         display: grid;
