@@ -653,3 +653,14 @@ elementToHover12.addEventListener('mousemove', function(event) {
 elementToHover12.addEventListener('mouseout', function(event) {
     floatingWindow12.style.display = 'none';
 });
+
+/*music on clisk in any upgrade or autocliker */
+document.addEventListener("DOMContentLoaded", function() {
+  var upgradeElements = document.querySelectorAll(".autoClicker" && ".upgrades");
+  upgradeElements.forEach(function(element) {
+    element.addEventListener("click", function() {
+      var audio = document.getElementById("audio");
+      audio.play();
+    });
+  });
+});
