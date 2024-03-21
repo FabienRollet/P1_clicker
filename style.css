@@ -145,13 +145,91 @@ nav>ul:last-child {
     display: block;
 }
 
+/*carrousel*/
+.carouselMobile {
+    width: 100%; /* Carrousel s'étire sur la largeur de la page */
+    height: 100px;
+    overflow: hidden; /* Cache les images en dehors de la zone visible */
+    white-space: nowrap; /* Empêche les images de passer à la ligne */
+  }
+  
+  .carouselMobile img {
+    width: 100%; /* Pour s'adapter à la largeur du carrousel */
+    height: 100%;
+    object-fit: cover;
+    display: inline-block; /* Pour que les images s'affichent côte à côte */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .carouselMobile img {
+    animation: scroll 20s ease-in-out infinite; /* Vitesse et boucle de l'animation */
+  }
+
+  .carouselDesktop{
+    display: none;
+  }
+
+  .carouselDesktop {
+    width: auto; /* Carrousel s'étire sur la largeur de la page */
+    height: 100px;
+    overflow: hidden; /* Cache les images en dehors de la zone visible */
+    white-space: nowrap; /* Empêche les images de passer à la ligne */
+  }
+  
+  .carouselDesktop img {
+    width: 100%; /* Pour s'adapter à la largeur du carrousel */
+    height: 100%;
+    object-fit: cover;
+    display: inline-block; /* Pour que les images s'affichent côte à côte */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-100%);
+      }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .carouselDesktop img {
+    animation: scroll 20s ease-in-out infinite; /* Vitesse et boucle de l'animation */
+  }
+/*fin carrousel*/
+
 .croissant-img {
     max-width: 100%;
     display: block;
     margin: auto auto;
 }
 
-section>p {
+.money {
     text-align: center;
     background-color: #70b3e1;
     padding-top: 2rem;
@@ -283,7 +361,7 @@ section>p {
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
-    width: 50%;
+    width: 60%;
   }
   
 /* fin modale */
@@ -504,5 +582,12 @@ section>p {
 
     section>p {
         margin-top: 3rem;
+    }
+
+    .carouselMobile{
+        display: none;
+    }
+    .carouselDesktop{
+        display: block;
     }
 }
