@@ -18,7 +18,7 @@ function togglePopup3() {
 
 let desktopAutoClicker = document.querySelector(".side-bar-right");
 let desktop = window.innerWidth;
-if (desktop<=769){
+if (desktop <= 769) {
   desktopAutoClicker.onclick = null;
 }
 
@@ -171,29 +171,29 @@ let face = document.querySelector(".croissant-img");
 face.addEventListener("mousedown", facing);
 
 function facing() {
-  if (!badCroissant){
+  if (!badCroissant) {
     if (numberClicks % 10 === 0 || numberClicks % 10 === 5) {
-        face.src = "/assets/images/cwasoface2.png";
+      face.src = "/assets/images/cwasoface2.png";
     } else if (numberClicks % 10 === 1 || numberClicks % 10 === 6) {
-        face.src = "/assets/images/cwasoface3.png";
+      face.src = "/assets/images/cwasoface3.png";
     } else if (numberClicks % 10 === 2 || numberClicks % 10 === 7) {
-        face.src = "/assets/images/cwasoface4.png";
+      face.src = "/assets/images/cwasoface4.png";
     } else if (numberClicks % 10 === 3 || numberClicks % 10 === 8) {
-        face.src = "/assets/images/cwasoface5.png";
+      face.src = "/assets/images/cwasoface5.png";
     } else if (numberClicks % 10 === 4 || numberClicks % 10 === 9) {
-        face.src = "/assets/images/cwasoface6.png";
+      face.src = "/assets/images/cwasoface6.png";
     }
     badCroissant = true;
-        clearTimeout(timerface);
-        timerface = setTimeout(function() {
-            facerelease.src = "/assets/images/cwasoface.png";
-            badCroissant = false;
-        }, 1000);
+    clearTimeout(timerface);
+    timerface = setTimeout(function () {
+      facerelease.src = "/assets/images/cwasoface.png";
+      badCroissant = false;
+    }, 1000);
   }
 }
 
 let facerelease = document.querySelector(".croissant-img");
-facerelease.addEventListener("mouseup", facegood);
+facerelease.addEventListener("mouseup", facerelease);
 
 
 // upgrade debloquage compteur
@@ -272,169 +272,99 @@ document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgr
 
 
 //disparition de chaque upgrade apres un clic
-function HiddenImg(){
-  if(document.getElementById('upgradeImg1').style.display == 'block'){
-    document.getElementById('upgradeImg1').style.display = 'none';
-    }
-    else {
+function HiddenImg() {
+  if (document.getElementById('upgradeImg1').style.display == 'block') {
+    document.getElementById('upgradeImg1').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg1').style.display = 'block';
   }
 }
-function HiddenImg2(){
-  if(document.getElementById('upgradeImg2').style.display == 'block'){
-    document.getElementById('upgradeImg2').style.display = 'none';
-    }
-    else {
+function HiddenImg2() {
+  if (document.getElementById('upgradeImg2').style.display == 'block') {
+    document.getElementById('upgradeImg2').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg2').style.display = 'block';
   }
 }
-function HiddenImg3(){
-  if(document.getElementById('upgradeImg3').style.display == 'block'){
-    document.getElementById('upgradeImg3').style.display = 'none';
-    }
-    else {
+function HiddenImg3() {
+  if (document.getElementById('upgradeImg3').style.display == 'block') {
+    document.getElementById('upgradeImg3').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg3').style.display = 'block';
   }
 }
-function HiddenImg4(){
-  if(document.getElementById('upgradeImg4').style.display == 'block'){
-    document.getElementById('upgradeImg4').style.display = 'none';
-    }
-    else {
+function HiddenImg4() {
+  if (document.getElementById('upgradeImg4').style.display == 'block') {
+    document.getElementById('upgradeImg4').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg4').style.display = 'block';
   }
 }
-function HiddenImg5(){
-  if(document.getElementById('upgradeImg5').style.display == 'block'){
-    document.getElementById('upgradeImg5').style.display = 'none';
-    }
-    else {
+function HiddenImg5() {
+  if (document.getElementById('upgradeImg5').style.display == 'block') {
+    document.getElementById('upgradeImg5').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg5').style.display = 'block';
   }
 }
-function HiddenImg6(){
-  if(document.getElementById('upgradeImg6').style.display == 'block'){
-    document.getElementById('upgradeImg6').style.display = 'none';
-    }
-    else {
+function HiddenImg6() {
+  if (document.getElementById('upgradeImg6').style.display == 'block') {
+    document.getElementById('upgradeImg6').style.visibility = 'hidden';
+  }
+  else {
     document.getElementById('upgradeImg6').style.display = 'block';
   }
 }
-function HiddenImg7(){
-  if(document.getElementById('upgradeImg7').style.display == 'block'){
-    document.getElementById('upgradeImg7').style.display = 'none';
-    }
-    else {
+function HiddenImg7() {
+  if (document.getElementById('upgradeImg7').style.display == 'block') {
+    document.getElementById('upgradeImg7').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg7').style.display = 'block';
   }
 }
-function HiddenImg8(){
-  if(document.getElementById('upgradeImg8').style.display == 'block'){
-    document.getElementById('upgradeImg8').style.display = 'none';
-    }
-    else {
+function HiddenImg8() {
+  if (document.getElementById('upgradeImg8').style.display == 'block') {
+    document.getElementById('upgradeImg8').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg8').style.display = 'block';
   }
 }
-function HiddenImg9(){
-  if(document.getElementById('upgradeImg9').style.display == 'block'){
-    document.getElementById('upgradeImg9').style.display = 'none';
-    }
-    else {
+function HiddenImg9() {
+  if (document.getElementById('upgradeImg9').style.display == 'block') {
+    document.getElementById('upgradeImg9').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg9').style.display = 'block';
   }
 }
-function HiddenImg10(){
-  if(document.getElementById('upgradeImg10').style.display == 'block'){
-    document.getElementById('upgradeImg10').style.display = 'none';
-    }
-    else {
+function HiddenImg10() {
+  if (document.getElementById('upgradeImg10').style.display == 'block') {
+    document.getElementById('upgradeImg10').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg10').style.display = 'block';
   }
 }
-function HiddenImg11(){
-  if(document.getElementById('upgradeImg11').style.display == 'block'){
-    document.getElementById('upgradeImg11').style.display = 'none';
-    }
-    else {
+function HiddenImg11() {
+  if (document.getElementById('upgradeImg11').style.display == 'block') {
+    document.getElementById('upgradeImg11').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg11').style.display = 'block';
   }
 }
-function HiddenImg12(){
-  if(document.getElementById('upgradeImg12').style.display == 'block'){
-    document.getElementById('upgradeImg12').style.display = 'none';
-    }
-    else {
+function HiddenImg12() {
+  if (document.getElementById('upgradeImg12').style.display == 'block') {
+    document.getElementById('upgradeImg12').style.visibility='hidden';
+  }
+  else {
     document.getElementById('upgradeImg12').style.display = 'block';
   }
 }
-// debut carroussel
-/*window.onload = function () { 
-	let slides = 
-		document.getElementsByClassName('carousel-item'); 
-
-	function addActive(slide) { 
-		slide.classList.add('active'); 
-	} 
-
-	function removeActive(slide) { 
-		slide.classList.remove('active'); 
-	} 
-
-	addActive(slides[0]); 
-	setInterval(function () { 
-		for (let i = 0; i < slides.length; i++) { 
-			if (i + 1 == slides.length) { 
-				addActive(slides[0]); 
-				setTimeout(removeActive, 350, slides[i]); 
-				break; 
-			} 
-			if (slides[i].classList.contains('active')) { 
-				setTimeout(removeActive, 350, slides[i]); 
-				addActive(slides[i + 1]); 
-				break; 
-			} 
-		} 
-	}, 1500); 
-};*/
-
-/*#carousel-item0 {
-  transform: translateX(-50%) translateX(-120%) scale(0.6);
-  filter: brightness(40%);
-  z-index: 1;
-}
-
-#carousel-item1 {
-  transform: translateX(-50%) translateX(-80%) scale(0.8);
-  filter: brightness(65%);
-  opacity: 1;
-  z-index: 2;
-}
-
-#carousel-item2 {
-  transform: translateX(-50%) scale(1);
-  filter: brightness(100%);
-  opacity: 1;
-  z-index: 3;
-}
-
-#carousel-item3 {
-  transform: translateX(-50%) translateX(80%) scale(0.8);
-  filter: brightness(65%);
-  opacity: 1;
-  z-index: 2;
-}
-
-#carousel-item4 {
-  transform: translateX(-50%) translateX(120%) scale(0.6);
-  filter: brightness(40%);
-  opacity: 1;
-  z-index: 1;
-}
-
-#carousel-item5 {
-  transform: translateX(-50%) scale(1.5);
-  filter: brightness(40%);
-  opacity: 0;
-  z-index: 1;
-}*/
