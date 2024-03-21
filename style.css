@@ -117,6 +117,7 @@ nav>ul:last-child {
 .how-to-play {
     background-color: #fc974a;
     color: black;
+
     max-width: 600px;
     width: 100%;
     padding: 30px;
@@ -127,7 +128,16 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
-
+.how-to-play h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.how-to-play li {
+    padding-top: 12px;
+}
+.how-to-play p{
+    text-align: center;
+}
 .how-to-play.open {
     display: block;
 }
@@ -145,7 +155,16 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
+.who-are-we h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.who-are-we p{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 .personalisedCroissant>img {
     width: 9rem;
 
