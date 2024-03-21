@@ -164,9 +164,25 @@ setInterval(() => {
 
 /*end autoclicker */
 
+/*modaleSurprise*/
+let numberClicksGoal = true;
+setInterval(() => {
+  if(numberClicks >= 100000 && numberClicks <= 200000 && numberClicksGoal){
+    let modal = document.getElementById("myModalSurprise");
+    modal.style.display = "block";
+    setTimeout(function () {
+      modal.style.display = "none";
+    }, 10000);
+    numberClicksGoal = !numberClicksGoal;
+  }
+}, 1000);
+
+/*fin modalesurprise*/
+
 /*CHanging croissant face*/
 let timerface;
 let badCroissant = false;
+
 let face = document.querySelector(".croissant-img");
 face.addEventListener("mousedown", facing);
 
