@@ -170,6 +170,8 @@ let badCroissant = false;
 let face = document.querySelector(".croissant-img");
 face.addEventListener("mousedown", facing);
 
+//let facerelease = document.querySelector(".croissant-img");
+//facerelease.addEventListener("mouseup", facegood);
 function facing() {
   if (!badCroissant) {
     if (numberClicks % 10 === 0 || numberClicks % 10 === 5) {
@@ -192,14 +194,17 @@ function facing() {
   }
 }
 
+
 let facerelease = document.querySelector(".croissant-img");
 facerelease.addEventListener("mouseup", facerelease);
+
 
 
 // upgrade debloquage compteur
 
 function addValueOfUpgrade1() {
   numberClicks += 1000;
+  console.log("toto");
   document.getElementById("numberClicks").textContent = numberClicks;
 }
 
@@ -273,6 +278,7 @@ document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgr
 
 //disparition de chaque upgrade apres un clic
 function HiddenImg() {
+
   if (document.getElementById('upgradeImg1').style.display == 'block') {
     document.getElementById('upgradeImg1').style.visibility = 'hidden';
   }
@@ -286,85 +292,106 @@ function HiddenImg2() {
   }
   else {
     document.getElementById('upgradeImg2').style.display = 'block';
+
   }
 }
 function HiddenImg3() {
   if (document.getElementById('upgradeImg3').style.display == 'block') {
+
     document.getElementById('upgradeImg3').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg3').style.display = 'block';
+
   }
 }
 function HiddenImg4() {
   if (document.getElementById('upgradeImg4').style.display == 'block') {
+
     document.getElementById('upgradeImg4').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg4').style.display = 'block';
+
   }
 }
 function HiddenImg5() {
   if (document.getElementById('upgradeImg5').style.display == 'block') {
+
     document.getElementById('upgradeImg5').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg5').style.display = 'block';
+
   }
 }
 function HiddenImg6() {
   if (document.getElementById('upgradeImg6').style.display == 'block') {
+
     document.getElementById('upgradeImg6').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg6').style.display = 'block';
+
   }
 }
 function HiddenImg7() {
   if (document.getElementById('upgradeImg7').style.display == 'block') {
+
     document.getElementById('upgradeImg7').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg7').style.display = 'block';
+
   }
 }
 function HiddenImg8() {
   if (document.getElementById('upgradeImg8').style.display == 'block') {
+
     document.getElementById('upgradeImg8').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg8').style.display = 'block';
+
   }
 }
 function HiddenImg9() {
   if (document.getElementById('upgradeImg9').style.display == 'block') {
+
     document.getElementById('upgradeImg9').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg9').style.display = 'block';
+
   }
 }
 function HiddenImg10() {
   if (document.getElementById('upgradeImg10').style.display == 'block') {
+
     document.getElementById('upgradeImg10').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg10').style.display = 'block';
+
   }
 }
 function HiddenImg11() {
   if (document.getElementById('upgradeImg11').style.display == 'block') {
+
     document.getElementById('upgradeImg11').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg11').style.display = 'block';
+
   }
 }
 function HiddenImg12() {
   if (document.getElementById('upgradeImg12').style.display == 'block') {
+
     document.getElementById('upgradeImg12').style.visibility='hidden';
   }
   else {
     document.getElementById('upgradeImg12').style.display = 'block';
   }
+
 }

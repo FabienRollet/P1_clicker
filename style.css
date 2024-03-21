@@ -541,12 +541,14 @@ img:nth-child(1) {
 
 #upgradeList>li {
     list-style-type: none;
+    
 }
 
 #upgradeList>li>a {
     background-repeat: no-repeat, no-repeat;
     background-position: center;
     padding-top: 5rem;
+    display:block
 }
 
 #upgradeImg1 {
