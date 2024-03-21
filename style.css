@@ -23,7 +23,7 @@ h2 {
     color: #FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
-    background-size: 100vw 20vh;
+    background-size: 100vw 24vh;
     cursor: pointer;
 }
 
@@ -37,6 +37,16 @@ header>img {
     bottom: 1.68rem;
 
 
+}
+
+@media screen and (width <768px) {
+    nav ul li {
+        margin: 5px;
+        padding: 5px;
+        color: #572b1b;
+        font-size: larger;
+        font-weight: bold;
+    }
 }
 
 nav>ul:first-child {
@@ -85,7 +95,7 @@ nav>ul:last-child {
 
 .barreBas {
     width: 130%;
-    transform:translate(-10%, 170%) rotate(180deg);
+    transform: translate(-10%, 170%) rotate(180deg);
 }
 
 @media screen and (width >=768px) {
@@ -95,8 +105,8 @@ nav>ul:last-child {
     }
 }
 
+/* Navbar pop-up */
 .navbar {
-    /* Navbar pop-up */
     display: none;
 }
 
@@ -136,10 +146,10 @@ nav>ul:last-child {
     display: none;
 }
 
-.personalisedCroissant>img{
-    width:9rem;
+.personalisedCroissant>img {
+    width: 9rem;
 
-} 
+}
 
 .who-are-we.open {
     display: block;
@@ -147,80 +157,101 @@ nav>ul:last-child {
 
 /*carrousel*/
 .carouselMobile {
-    width: 100%; /* Carrousel s'étire sur la largeur de la page */
+    width: 100%;
+    /* Carrousel s'étire sur la largeur de la page */
     height: 100px;
-    overflow: hidden; /* Cache les images en dehors de la zone visible */
-    white-space: nowrap; /* Empêche les images de passer à la ligne */
-  }
-  
-  .carouselMobile img {
-    width: 100%; /* Pour s'adapter à la largeur du carrousel */
+    overflow: hidden;
+    /* Cache les images en dehors de la zone visible */
+    white-space: nowrap;
+    /* Empêche les images de passer à la ligne */
+}
+
+.carouselMobile img {
+    width: 100%;
+    /* Pour s'adapter à la largeur du carrousel */
     height: 100%;
     object-fit: cover;
-    display: inline-block; /* Pour que les images s'affichent côte à côte */
-  }
-  
-  @keyframes scroll {
+    display: inline-block;
+    /* Pour que les images s'affichent côte à côte */
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     25% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     50% {
-      transform: translateX(-200%);
+        transform: translateX(-200%);
     }
+
     75% {
         transform: translateX(-100%);
-      }
-    100% {
-      transform: translateX(0);
     }
-  }
-  
-  .carouselMobile img {
-    animation: scroll 20s ease-in-out infinite; /* Vitesse et boucle de l'animation */
-  }
 
-  .carouselDesktop{
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carouselMobile img {
+    animation: scroll 20s ease-in-out infinite;
+    /* Vitesse et boucle de l'animation */
+}
+
+.carouselDesktop {
     display: none;
-  }
+}
 
-  .carouselDesktop {
-    width: auto; /* Carrousel s'étire sur la largeur de la page */
+.carouselDesktop {
+    width: auto;
+    /* Carrousel s'étire sur la largeur de la page */
     height: 100px;
-    overflow: hidden; /* Cache les images en dehors de la zone visible */
-    white-space: nowrap; /* Empêche les images de passer à la ligne */
-  }
-  
-  .carouselDesktop img {
-    width: 100%; /* Pour s'adapter à la largeur du carrousel */
+    overflow: hidden;
+    /* Cache les images en dehors de la zone visible */
+    white-space: nowrap;
+    /* Empêche les images de passer à la ligne */
+}
+
+.carouselDesktop img {
+    width: 100%;
+    /* Pour s'adapter à la largeur du carrousel */
     height: 100%;
     object-fit: cover;
-    display: inline-block; /* Pour que les images s'affichent côte à côte */
-  }
-  
-  @keyframes scroll {
+    display: inline-block;
+    /* Pour que les images s'affichent côte à côte */
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     25% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
+
     50% {
-      transform: translateX(-200%);
+        transform: translateX(-200%);
     }
+
     75% {
         transform: translateX(-100%);
-      }
-    100% {
-      transform: translateX(0);
     }
-  }
-  
-  .carouselDesktop img {
-    animation: scroll 20s ease-in-out infinite; /* Vitesse et boucle de l'animation */
-  }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.carouselDesktop img {
+    animation: scroll 20s ease-in-out infinite;
+    /* Vitesse et boucle de l'animation */
+}
+
 /*fin carrousel*/
 
 .croissant-img {
@@ -295,6 +326,7 @@ img:nth-child(1) {
     animation: fall 19s linear infinite;
     animation-delay: -1s;
 }
+
 .pluie img:nth-child(8) {
     left: 25%;
     animation: fall 10s linear infinite;
@@ -370,7 +402,7 @@ img:nth-child(1) {
     grid-template-rows: auto;
     justify-content: left;
     align-items: end;
-    
+
 }
 
 .autoClicker {
@@ -478,8 +510,8 @@ img:nth-child(1) {
     border: 1px solid #888;
     border-radius: 20px;
     width: 60%;
-  }
-  
+}
+
 /* fin modale */
 
 /*Upgrade*/
@@ -522,64 +554,77 @@ img:nth-child(1) {
 #upgradeImg1 {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     background-size: 4rem, 5rem;
+    display: block;
 }
 
 #upgradeImg2 {
     background-image: url("assets/images/upgrade 2.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg3 {
     background-image: url("assets/images/upgrade 4.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg4 {
     background-image: url("assets/images/upgrade 6.png"), url("assets/images/cadre upgrade.png");
     background-size: 6rem, 5rem;
+    display: block;
 }
 
 #upgradeImg5 {
     background-image: url("assets/images/upgrade 8.png"), url("assets/images/cadre upgrade.png");
     background-size: 6rem, 5rem;
+    display: block;
 }
 
 #upgradeImg6 {
     background-image: url("assets/images/upgrade 9.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg7 {
     background-image: url("assets/images/upgrade 10.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg8 {
     background-image: url("assets/images/upgrade 11.png"), url("assets/images/cadre upgrade.png");
     background-size: 6rem, 5rem;
+    display: block;
 }
 
 #upgradeImg9 {
     background-image: url("assets/images/upgrade 12.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg10 {
     background-image: url("assets/images/upgrade 13.png"), url("assets/images/cadre upgrade.png");
     background-size: 7rem, 5rem;
+    display: block;
 }
 
 #upgradeImg11 {
     background-image: url("assets/images/upgrade 14.png"), url("assets/images/cadre upgrade.png");
     background-size: 5rem, 5rem;
+    display: block;
 }
 
 #upgradeImg12 {
     background-image: url("assets/images/upgrade 15.png"), url("assets/images/cadre upgrade.png");
     background-size: 7rem, 5rem;
+    display: block;
 }
 
 /*fin upgrade*/
+
 
 /* RESPONSIVE DESKTOP */
 @media screen and (width >=768px) {
@@ -598,7 +643,7 @@ img:nth-child(1) {
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 22vh;
+        background-size: 100vw 18vh;
         gap: 10px;
         font-size: larger;
         font-weight: bold;
@@ -622,15 +667,14 @@ img:nth-child(1) {
         padding-right: 5rem;
     }
 
-    .personalisedCroissant>img{
-        width:14rem;
-    
-    } 
+    .personalisedCroissant>img {
+        width: 14rem;
+    }
 
     main {
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto;
     }
 
     .autoClicker {
@@ -639,7 +683,7 @@ img:nth-child(1) {
         grid-template-columns: 5rem 7rem 15.5rem;
         grid-template-rows: 40px 40px;
         grid-template-areas: "picture production production"
-        "picture lvl costForNextLevel";
+            "picture lvl costForNextLevel";
         cursor: pointer;
         padding-top: 1rem;
     }
@@ -648,13 +692,13 @@ img:nth-child(1) {
         display: inline-grid;
         grid-template-rows: auto;
         justify-content: left;
-        align-items:start;
-
+        align-items: start;
     }
 
     .side-bar-right {
-        display:none;
+        display: none;
     }
+
     .menuDeroulant.open {
         display: block;
     }
@@ -662,22 +706,23 @@ img:nth-child(1) {
     .midle {
         grid-column-start: 2;
         grid-column-end: 3;
-        background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
-        background-size: 550px 750px;
-        background-repeat: no-repeat; /* A CHANGERRRRRR*/
+        background-image: url(/assets/images/fondCroissant.jfif);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* A CHANGERRRRRR*/
         border: 45px solid;
         border-image: url("/assets/images/bordure.png") 8%;
         height: 36rem;
     }
 
-    .croissant-img{
+    .croissant-img {
         width: 25rem;
     }
 
     .upgrade {
         grid-column-start: 3;
         grid-column-end: 4;
-        grid-row-start: 1;
     }
 
     .upgrade ul {
@@ -689,10 +734,9 @@ img:nth-child(1) {
 
     #upgradeList>li {
         list-style-type: none;
-        
         background-repeat: no-repeat, no-repeat;
         background-position: center;
-        padding-top: 6rem;
+        padding-top: 1rem;
     }
 
     .side-bar {
@@ -703,10 +747,12 @@ img:nth-child(1) {
         margin-top: 3rem;
     }
 
-    .carouselMobile{
+    .carouselMobile {
         display: none;
     }
-    .carouselDesktop{
+
+    .carouselDesktop {
         display: block;
+        height: 7rem;
     }
 }
