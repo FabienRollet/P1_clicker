@@ -641,7 +641,7 @@ img:nth-child(1) {
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 18vh;
+        background-size: 100vw 8rem;
         gap: 10px;
         font-size: larger;
         font-weight: bold;
