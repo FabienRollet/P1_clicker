@@ -117,6 +117,7 @@ nav>ul:last-child {
 .how-to-play {
     background-color: #fc974a;
     color: black;
+
     max-width: 600px;
     width: 100%;
     padding: 30px;
@@ -127,7 +128,16 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
-
+.how-to-play h3{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.how-to-play li {
+    padding-top: 12px;
+}
+.how-to-play p{
+    text-align: center;
+}
 .how-to-play.open {
     display: block;
 }
@@ -145,7 +155,16 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
+.who-are-we h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.who-are-we p{
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
 .personalisedCroissant>img {
     width: 9rem;
 
@@ -273,7 +292,14 @@ nav>ul:last-child {
     opacity: 70%;
     padding-bottom: 2rem;
     font-weight: bolder;
-    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px rgb rgb(29, 77, 167);
+    border:groove;
+    font-size: larger;
+}
+#numberClicks {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .croissant-img:active {
@@ -382,8 +408,18 @@ img:nth-child(1) {
 
     100% {
 
-        top: 110%;
+        top: 215%;
         transform: translateX (-20px) rotate(225deg);
+    }
+}
+
+@media screen and (width >=768px) {
+    @keyframes fall {
+        100% {
+
+            top: 99%;
+
+        }
     }
 }
 
@@ -461,25 +497,29 @@ img:nth-child(1) {
 .production {
     padding-top: 0.5rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
+    box-shadow: 6px 6px 25px #d88e17;
+    
 }
 
 .level {
     padding-top: 0.5rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     grid-area: lvl;
+    box-shadow: 6px 6px 25px #d88e17;
 }
 
 .costForNextLevel {
     padding-top: 0.5rem;
     padding-left: 0.4rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     border-radius: 0px 0px 10px 0px;
     grid-area: costForNextLevel;
+    box-shadow: 6px 6px 25px #d88e17;
 }
 
 .side-bar-right {
@@ -496,6 +536,7 @@ img:nth-child(1) {
 /*fin autocliker */
 
 /*modale*/
+
 /* Style de la modale */
 .modal {
     display: none;
@@ -520,6 +561,44 @@ img:nth-child(1) {
 }
 
 /* fin modale */
+
+/*modale surprise*/
+
+/* Style de la modale surprise */
+@media screen and (width <768px) {
+    .modalSurprise {
+        display: none;
+        /*Cachée par défaut*/
+        position: fixed;
+        /* Positionnement fixe */
+        z-index: 1;
+        /* Position en avant-plan */
+        left: -30%;
+        top: 10%;
+    }
+}
+
+@media screen and (width >768px) {
+    .modalSurprise {
+        display: none;
+        /*Cachée par défaut*/
+        position: fixed;
+        /* Positionnement fixe */
+        z-index: 1;
+        /* Position en avant-plan */
+        left: 28%;
+        top: 10%;
+    }
+}
+/* Style du contenu de la modale surprise */
+.modalSurprise-content {
+    margin: 15% auto;
+    /* Centrer verticalement et horizontalement */
+    padding: 20px;
+    width: 60%;
+}
+
+/* fin modale surprise */
 
 /*Upgrade*/
 .upgrade ul {
@@ -548,20 +627,21 @@ img:nth-child(1) {
 
 #upgradeList>li {
     list-style-type: none;
-    
+
 }
 
 #upgradeList>li>a {
     background-repeat: no-repeat, no-repeat;
     background-position: center;
     padding-top: 5rem;
-    display:block
+    display: block
 }
 
 #upgradeImg1 {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     background-size: 4rem, 5rem;
     display: block;
+
 }
 
 #upgradeImg2 {
@@ -596,7 +676,7 @@ img:nth-child(1) {
 
 #upgradeImg7 {
     background-image: url("assets/images/upgrade 10.png"), url("assets/images/cadre upgrade.png");
-    background-size: 5rem, 5rem;
+    background-size: 4rem, 5rem;
     display: block;
 }
 
