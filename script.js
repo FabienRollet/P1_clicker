@@ -656,7 +656,7 @@ elementToHover12.addEventListener('mouseout', function(event) {
 
 /*music on clisk in any upgrade or autocliker */
 document.addEventListener("DOMContentLoaded", function() {
-  var upgradeElements = document.querySelectorAll(.autoClicker .upgrades);
+  var upgradeElements = document.querySelectorAll(".autoClicker .upgrades");
   upgradeElements.forEach(function(element) {
     element.addEventListener("click", function() {
       var audio = document.getElementById("audio");
