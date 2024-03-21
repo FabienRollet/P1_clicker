@@ -505,13 +505,12 @@ nav>ul:last-child {
 
     .personalisedCroissant>img{
         width:14rem;
-    
     } 
 
     main {
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: auto auto;
     }
 
     .autoClicker {
@@ -530,12 +529,12 @@ nav>ul:last-child {
         grid-template-rows: auto;
         justify-content: left;
         align-items:start;
-
     }
 
     .side-bar-right {
         display:none;
     }
+
     .menuDeroulant.open {
         display: block;
     }
@@ -544,7 +543,7 @@ nav>ul:last-child {
         grid-column-start: 2;
         grid-column-end: 3;
         background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
-        background-size: 550px 750px;
+        background-size: 550px 485px;
         background-repeat: no-repeat; /* A CHANGERRRRRR*/
         border: 45px solid;
         border-image: url("/assets/images/bordure.png") 8%;
@@ -558,7 +557,6 @@ nav>ul:last-child {
     .upgrade {
         grid-column-start: 3;
         grid-column-end: 4;
-        grid-row-start: 1;
     }
 
     .upgrade ul {
@@ -570,7 +568,6 @@ nav>ul:last-child {
 
     #upgradeList>li {
         list-style-type: none;
-        
         background-repeat: no-repeat, no-repeat;
         background-position: center;
         padding-top: 6rem;
@@ -589,5 +586,6 @@ nav>ul:last-child {
     }
     .carouselDesktop{
         display: block;
+        height: 7rem;
     }
 }
