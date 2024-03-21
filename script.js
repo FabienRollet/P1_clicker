@@ -656,11 +656,16 @@ elementToHover12.addEventListener('mouseout', function(event) {
 
 /*music on clisk in any upgrade or autocliker */
 document.addEventListener("DOMContentLoaded", function() {
-  var upgradeElements = document.querySelectorAll(".autoClicker .upgrades");
-  upgradeElements.forEach(function(element) {
+  addClickListener(".upgrades");
+  addClickListener(".autoClicker");
+});
+
+function addClickListener(selector) {
+  let elements = document.querySelectorAll(selector);
+  elements.forEach(function(element) {
     element.addEventListener("click", function() {
-      var audio = document.getElementById("audio");
+      let audio = document.getElementById("audio");
       audio.play();
     });
   });
-});
+}
