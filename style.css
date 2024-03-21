@@ -185,6 +185,7 @@ section>p {
     grid-template-rows: auto;
     justify-content: left;
     align-items: end;
+    
 }
 
 .autoClicker {
@@ -195,7 +196,6 @@ section>p {
     grid-template-areas: "picture production production"
     "picture lvl costForNextLevel";
     cursor: pointer;
-
 }
 
 .autoClicker1Picture {
@@ -407,7 +407,10 @@ section>p {
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
         background-size: 100vw 22vh;
-        gap: 10px
+        gap: 10px;
+        font-size: larger;
+        font-weight: bold;
+        align-items: center;
     }
 
     nav>ul:first-child {
@@ -438,26 +441,66 @@ section>p {
         grid-template-rows: auto;
     }
 
-    .autoclicker {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
+    .autoClicker {
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 5rem 7rem 15.5rem;
+        grid-template-rows: 40px 40px;
+        grid-template-areas: "picture production production"
+        "picture lvl costForNextLevel";
+        cursor: pointer;
+        padding-top: 1rem;
+    }
+
+    .autoclicker-container {
+        display: inline-grid;
+        grid-template-rows: auto;
+        justify-content: left;
+        align-items:start;
+
+    }
+
+    .side-bar-right {
+        display:none;
+    }
+    .menuDeroulant.open {
+        display: block;
     }
 
     .midle {
         grid-column-start: 2;
         grid-column-end: 3;
-        background-image: url("https//www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+        background-image: url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
         background-size: 550px 750px;
+        background-repeat: no-repeat; /* A CHANGERRRRRR*/
         border: 45px solid;
         border-image: url("/assets/images/bordure.png") 8%;
+        height: 36rem;
+    }
 
+    .croissant-img{
+        width: 25rem;
     }
 
     .upgrade {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
+    }
+
+    .upgrade ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(4, auto);
+        text-align: right;
+    }
+
+    #upgradeList>li {
+        list-style-type: none;
+        
+        background-repeat: no-repeat, no-repeat;
+        background-position: center;
+        padding-top: 6rem;
     }
 
     .side-bar {
