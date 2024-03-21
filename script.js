@@ -657,7 +657,6 @@ elementToHover12.addEventListener('mouseout', function(event) {
 /*music on clisk in any upgrade or autocliker */
 document.addEventListener("DOMContentLoaded", function() {
   addClickListener(".upgrades");
-  addClickListener(".autoClicker");
 });
 
 function addClickListener(selector) {
@@ -666,6 +665,11 @@ function addClickListener(selector) {
     element.addEventListener("click", function() {
       let audio = document.getElementById("audio");
       audio.play();
+      if (music.muted) {
+        audio.muted = true;
+      } else {
+        audio.muted = false;
+      }
     });
   });
 }

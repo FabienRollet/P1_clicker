@@ -23,7 +23,8 @@ h2 {
     color: #FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
-    background-size: 100vw 24vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     cursor: pointer;
 }
 
@@ -280,8 +281,7 @@ nav>ul:last-child {
 }
 .midle {
     background-image: url(/assets/images/fondCroissant.jfif);
-    background-size: cover;
-    background-position: center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -840,7 +840,8 @@ img:nth-child(1) {
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 8rem;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
         gap: 10px;
         font-size: larger;
         font-weight: bold;
@@ -892,6 +893,16 @@ img:nth-child(1) {
         align-items: start;
     }
 
+    .production{
+        background-color: #fc974a;
+    }
+    .level{
+        background-color: #d88e17;
+    }
+    .costForNextLevel{
+        background-color: #ED9100;
+    }
+
     .side-bar-right {
         display: none;
     }
@@ -904,8 +915,7 @@ img:nth-child(1) {
         grid-column-start: 2;
         grid-column-end: 3;
         background-image: url(/assets/images/fondCroissant.jfif);
-        background-size: cover;
-        background-position: center;
+        background-size: 100% 100%;
         background-repeat: no-repeat;
         border: 45px solid;
         border-image: url("/assets/images/bordure.png") 8%;
