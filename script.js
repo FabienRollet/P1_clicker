@@ -167,7 +167,7 @@ setInterval(() => {
 /*modaleSurprise*/
 let numberClicksGoal = true;
 setInterval(() => {
-  if(numberClicks >= 100000 && numberClicks <= 20000 && numberClicksGoal){
+  if(numberClicks >= 100000 && numberClicks <= 200000 && numberClicksGoal){
     let modal = document.getElementById("myModalSurprise");
     modal.style.display = "block";
     setTimeout(function () {
