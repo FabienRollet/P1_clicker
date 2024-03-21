@@ -39,6 +39,16 @@ header>img {
 
 }
 
+@media screen and (width <768px) {
+    nav ul li {
+        margin: 5px;
+        padding: 5px;
+        color: #572b1b;
+        font-size: larger;
+        font-weight: bold;
+    }
+}
+
 nav>ul:first-child {
     display: flex;
     flex-direction: column;
@@ -608,7 +618,7 @@ img:nth-child(1) {
 #upgradeImg12 {
     background-image: url("assets/images/upgrade 15.png"), url("assets/images/cadre upgrade.png");
     background-size: 7rem, 5rem;
-    display:block;
+    display: block;
 }
 
 /*fin upgrade*/
