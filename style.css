@@ -489,6 +489,7 @@ img:nth-child(1) {
 /*fin autocliker */
 
 /*modale*/
+
 /* Style de la modale */
 .modal {
     display: none;
@@ -513,6 +514,44 @@ img:nth-child(1) {
 }
 
 /* fin modale */
+
+/*modale surprise*/
+
+/* Style de la modale surprise */
+@media screen and (width <768px) {
+    .modalSurprise {
+        display: none;
+        /*Cachée par défaut*/
+        position: fixed;
+        /* Positionnement fixe */
+        z-index: 1;
+        /* Position en avant-plan */
+        left: -30%;
+        top: 10%;
+    }
+}
+
+@media screen and (width >768px) {
+    .modalSurprise {
+        display: none;
+        /*Cachée par défaut*/
+        position: fixed;
+        /* Positionnement fixe */
+        z-index: 1;
+        /* Position en avant-plan */
+        left: 28%;
+        top: 10%;
+    }
+}
+/* Style du contenu de la modale surprise */
+.modalSurprise-content {
+    margin: 15% auto;
+    /* Centrer verticalement et horizontalement */
+    padding: 20px;
+    width: 60%;
+}
+
+/* fin modale surprise */
 
 /*Upgrade*/
 .upgrade ul {
