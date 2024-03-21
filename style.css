@@ -23,7 +23,7 @@ h2 {
     color: #FFE5A2;
     padding: 3rem;
     background-image: url(./assets/images/wood\ navbar.png);
-    background-size: 100vw 20vh;
+    background-size: 100vw 24vh;
     cursor: pointer;
 }
 
@@ -641,7 +641,7 @@ img:nth-child(1) {
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
         background-image: url(./assets/images/wood\ navbar.png);
-        background-size: 100vw 22vh;
+        background-size: 100vw 18vh;
         gap: 10px;
         font-size: larger;
         font-weight: bold;
