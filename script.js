@@ -18,7 +18,7 @@ function togglePopup3() {
 
 let desktopAutoClicker = document.querySelector(".side-bar-right");
 let desktop = window.innerWidth;
-if (desktop<=769){
+if (desktop <= 769) {
   desktopAutoClicker.onclick = null;
 }
 
@@ -37,13 +37,13 @@ let imgMusic = document.querySelector(".imgMusic");
 let music = document.querySelector(".music");
 
 function toggleMusic() {
-    if (music.muted) {
-        music.muted = false;
-        imgMusic.src = "/assets/images/Speaker_Icon.png";
-    } else {
-        music.muted = true;
-        imgMusic.src = "/assets/images/Speaker_muted.png";
-    }
+  if (music.muted) {
+    music.muted = false;
+    imgMusic.src = "/assets/images/Speaker_Icon.png";
+  } else {
+    music.muted = true;
+    imgMusic.src = "/assets/images/Speaker_muted.png";
+  }
 }
 
 
@@ -161,6 +161,7 @@ setInterval(() => {
   document.getElementById("numberClicks").textContent = numberClicks += prodAutoClicker4;
 }, 1000);
 
+
 /*end autoclicker */
 
 /*CHanging croissant face*/
@@ -170,98 +171,200 @@ let face = document.querySelector(".croissant-img");
 face.addEventListener("mousedown", facing);
 
 function facing() {
-  if (!badCroissant){
+  if (!badCroissant) {
     if (numberClicks % 10 === 0 || numberClicks % 10 === 5) {
-        face.src = "/assets/images/cwasoface2.png";
+      face.src = "/assets/images/cwasoface2.png";
     } else if (numberClicks % 10 === 1 || numberClicks % 10 === 6) {
-        face.src = "/assets/images/cwasoface3.png";
+      face.src = "/assets/images/cwasoface3.png";
     } else if (numberClicks % 10 === 2 || numberClicks % 10 === 7) {
-        face.src = "/assets/images/cwasoface4.png";
+      face.src = "/assets/images/cwasoface4.png";
     } else if (numberClicks % 10 === 3 || numberClicks % 10 === 8) {
-        face.src = "/assets/images/cwasoface5.png";
+      face.src = "/assets/images/cwasoface5.png";
     } else if (numberClicks % 10 === 4 || numberClicks % 10 === 9) {
-        face.src = "/assets/images/cwasoface6.png";
+      face.src = "/assets/images/cwasoface6.png";
     }
     badCroissant = true;
-        clearTimeout(timerface);
-        timerface = setTimeout(function() {
-            facerelease.src = "/assets/images/cwasoface.png";
-            badCroissant = false;
-        }, 1000);
+    clearTimeout(timerface);
+    timerface = setTimeout(function () {
+      facerelease.src = "/assets/images/cwasoface.png";
+      badCroissant = false;
+    }, 1000);
   }
 }
 
 let facerelease = document.querySelector(".croissant-img");
 facerelease.addEventListener("mouseup", facerelease);
 
+
 // upgrade debloquage compteur
-function addValueOfUpgrade1(){
- numberClicks +=1000;
- document.getElementById("numberClicks").textContent = numberClicks;
+
+function addValueOfUpgrade1() {
+  numberClicks += 1000;
+  document.getElementById("numberClicks").textContent = numberClicks;
 }
-document.getElementById("upgradeImg1").addEventListener("click", addValueOfUpgrade1); 
 
-function addValueOfUpgrade2(){
-  numberClicks +=2000;
-  document.getElementById("numberClicks").textContent = numberClicks;
- }
- document.getElementById("upgradeImg2").addEventListener("click", addValueOfUpgrade2);
+document.getElementById("upgradeImg1").addEventListener("click", addValueOfUpgrade1);
 
- function addValueOfUpgrade3(){
-  numberClicks +=3000;
+function addValueOfUpgrade2() {
+  numberClicks += 2000;
   document.getElementById("numberClicks").textContent = numberClicks;
- }
- document.getElementById("upgradeImg3").addEventListener("click", addValueOfUpgrade3);
- 
- function addValueOfUpgrade4(){
-   numberClicks +=4000;
-   document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg2").addEventListener("click", addValueOfUpgrade2);
+
+function addValueOfUpgrade3() {
+  numberClicks += 3000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg3").addEventListener("click", addValueOfUpgrade3);
+
+function addValueOfUpgrade4() {
+  numberClicks += 4000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg4").addEventListener("click", addValueOfUpgrade4);
+function addValueOfUpgrade5() {
+  numberClicks += 5000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg5").addEventListener("click", addValueOfUpgrade5);
+
+function addValueOfUpgrade6() {
+  numberClicks += 6000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg6").addEventListener("click", addValueOfUpgrade6);
+
+function addValueOfUpgrade7() {
+  numberClicks += 7000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg7").addEventListener("click", addValueOfUpgrade7);
+
+function addValueOfUpgrade8() {
+  numberClicks += 8000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg8").addEventListener("click", addValueOfUpgrade8);
+
+function addValueOfUpgrade9() {
+  numberClicks += 9000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg9").addEventListener("click", addValueOfUpgrade9);
+
+function addValueOfUpgrade10() {
+  numberClicks += 10000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg10").addEventListener("click", addValueOfUpgrade10);
+
+function addValueOfUpgrade11() {
+  numberClicks += 11000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg11").addEventListener("click", addValueOfUpgrade11);
+
+function addValueOfUpgrade12() {
+  numberClicks += 12000;
+  document.getElementById("numberClicks").textContent = numberClicks;
+}
+document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgrade12);
+
+
+//disparition de chaque upgrade apres un clic
+function HiddenImg() {
+  if (document.getElementById('upgradeImg1').style.display == 'block') {
+    document.getElementById('upgradeImg1').style.visibility = 'hidden';
   }
-  document.getElementById("upgradeImg4").addEventListener("click", addValueOfUpgrade4);
-  function addValueOfUpgrade5(){
-    numberClicks +=5000;
-    document.getElementById("numberClicks").textContent = numberClicks;
-   }
-   document.getElementById("upgradeImg5").addEventListener("click", addValueOfUpgrade5);
-   
-   function addValueOfUpgrade6(){
-     numberClicks +=6000;
-     document.getElementById("numberClicks").textContent = numberClicks;
-    }
-    document.getElementById("upgradeImg6").addEventListener("click", addValueOfUpgrade6);
-   
-    function addValueOfUpgrade7(){
-     numberClicks +=7000;
-     document.getElementById("numberClicks").textContent = numberClicks;
-    }
-    document.getElementById("upgradeImg7").addEventListener("click", addValueOfUpgrade7);
-    
-    function addValueOfUpgrade8(){
-      numberClicks +=8000;
-      document.getElementById("numberClicks").textContent = numberClicks;
-     }
-     document.getElementById("upgradeImg8").addEventListener("click", addValueOfUpgrade8);
-
-     function addValueOfUpgrade9(){
-      numberClicks +=9000;
-      document.getElementById("numberClicks").textContent = numberClicks;
-     }
-     document.getElementById("upgradeImg9").addEventListener("click", addValueOfUpgrade9);
-     
-     function addValueOfUpgrade10(){
-       numberClicks +=10000;
-       document.getElementById("numberClicks").textContent = numberClicks;
-      }
-      document.getElementById("upgradeImg10").addEventListener("click", addValueOfUpgrade10);
-     
-      function addValueOfUpgrade11(){
-       numberClicks +=11000;
-       document.getElementById("numberClicks").textContent = numberClicks;
-      }
-      document.getElementById("upgradeImg11").addEventListener("click", addValueOfUpgrade11);
-      
-      function addValueOfUpgrade12(){
-        numberClicks +=12000;
-        document.getElementById("numberClicks").textContent = numberClicks;
-       }
-       document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgrade12);
+  else {
+    document.getElementById('upgradeImg1').style.display = 'block';
+  }
+}
+function HiddenImg2() {
+  if (document.getElementById('upgradeImg2').style.display == 'block') {
+    document.getElementById('upgradeImg2').style.visibility = 'hidden';
+  }
+  else {
+    document.getElementById('upgradeImg2').style.display = 'block';
+  }
+}
+function HiddenImg3() {
+  if (document.getElementById('upgradeImg3').style.display == 'block') {
+    document.getElementById('upgradeImg3').style.visibility = 'hidden';
+  }
+  else {
+    document.getElementById('upgradeImg3').style.display = 'block';
+  }
+}
+function HiddenImg4() {
+  if (document.getElementById('upgradeImg4').style.display == 'block') {
+    document.getElementById('upgradeImg4').style.visibility = 'hidden';
+  }
+  else {
+    document.getElementById('upgradeImg4').style.display = 'block';
+  }
+}
+function HiddenImg5() {
+  if (document.getElementById('upgradeImg5').style.display == 'block') {
+    document.getElementById('upgradeImg5').style.visibility = 'hidden';
+  }
+  else {
+    document.getElementById('upgradeImg5').style.display = 'block';
+  }
+}
+function HiddenImg6() {
+  if (document.getElementById('upgradeImg6').style.display == 'block') {
+    document.getElementById('upgradeImg6').style.visibility = 'hidden';
+  }
+  else {
+    document.getElementById('upgradeImg6').style.display = 'block';
+  }
+}
+function HiddenImg7() {
+  if (document.getElementById('upgradeImg7').style.display == 'block') {
+    document.getElementById('upgradeImg7').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg7').style.display = 'block';
+  }
+}
+function HiddenImg8() {
+  if (document.getElementById('upgradeImg8').style.display == 'block') {
+    document.getElementById('upgradeImg8').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg8').style.display = 'block';
+  }
+}
+function HiddenImg9() {
+  if (document.getElementById('upgradeImg9').style.display == 'block') {
+    document.getElementById('upgradeImg9').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg9').style.display = 'block';
+  }
+}
+function HiddenImg10() {
+  if (document.getElementById('upgradeImg10').style.display == 'block') {
+    document.getElementById('upgradeImg10').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg10').style.display = 'block';
+  }
+}
+function HiddenImg11() {
+  if (document.getElementById('upgradeImg11').style.display == 'block') {
+    document.getElementById('upgradeImg11').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg11').style.display = 'block';
+  }
+}
+function HiddenImg12() {
+  if (document.getElementById('upgradeImg12').style.display == 'block') {
+    document.getElementById('upgradeImg12').style.visibility='hidden';
+  }
+  else {
+    document.getElementById('upgradeImg12').style.display = 'block';
+  }
+}
