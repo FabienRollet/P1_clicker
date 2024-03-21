@@ -72,10 +72,8 @@ nav>ul:last-child {
 /*END NAVBAR STYLE*/
 
 .barreHaut {
-    width: 100%;
-    position: relative;
-    top: -18%;
-    left: 0%;
+    width: 130%;
+    transform: translate(-10%, -160%);
 }
 
 @media screen and (width >=768px) {
@@ -86,17 +84,14 @@ nav>ul:last-child {
 }
 
 .barreBas {
-    width: 100%;
-    position: absolute;
-    bottom: -3.3rem;
-    left: 0%;
-    transform: rotate(180deg);
+    width: 130%;
+    transform:translate(-10%, 170%) rotate(180deg);
 }
 
 @media screen and (width >=768px) {
     .barreBas {
-        width: 115%;
-        transform: translate(-6%, 100%) rotate(180deg);
+        width: 112%;
+        transform: translate(-5%, 105%) rotate(180deg);
     }
 }
 
