@@ -192,15 +192,14 @@ function facing() {
 }
 
 let facerelease = document.querySelector(".croissant-img");
-facerelease.addEventListener("mouseup", facegood);
+facerelease.addEventListener("mouseup", facerelease);
 
 // upgrade debloquage compteur
-
 function addValueOfUpgrade1(){
  numberClicks +=1000;
  document.getElementById("numberClicks").textContent = numberClicks;
 }
-document.getElementById("upgradeImg1").addEventListener("click", addValueOfUpgrade1);
+document.getElementById("upgradeImg1").addEventListener("click", addValueOfUpgrade1); 
 
 function addValueOfUpgrade2(){
   numberClicks +=2000;
