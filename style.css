@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -129,16 +130,20 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
-.how-to-play h3{
+
+.how-to-play h3 {
     padding-bottom: 20px;
     text-align: center;
 }
+
 .how-to-play li {
     padding-top: 12px;
 }
-.how-to-play p{
+
+.how-to-play p {
     text-align: center;
 }
+
 .how-to-play.open {
     display: block;
 }
@@ -156,16 +161,18 @@ nav>ul:last-child {
     z-index: 99;
     display: none;
 }
-.who-are-we h3{
+
+.who-are-we h3 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-.who-are-we p{
+.who-are-we p {
     margin-top: 20px;
     font-weight: bold;
     text-align: center;
 }
+
 .personalisedCroissant>img {
     width: 9rem;
 
@@ -294,9 +301,10 @@ nav>ul:last-child {
     font-weight: bolder;
     border-radius: 10px;
     box-shadow: 6px 6px 25px rgb rgb(29, 77, 167);
-    border:groove;
+    border: groove;
     font-size: larger;
 }
+
 #numberClicks {
     font-size: 2em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -433,6 +441,8 @@ img:nth-child(1) {
 .autoclicker-container ul {
     list-style-type: none;
     padding-left: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .menuDeroulant.open {
@@ -497,29 +507,39 @@ img:nth-child(1) {
 .production {
     padding-top: 0.5rem;
     text-align: center;
-    border: 2px ridge #ED9100 ;
+    border: 2px ridge #ED9100;
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
     box-shadow: 6px 6px 25px #d88e17;
-    
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 1.5rem;
 }
 
 .level {
     padding-top: 0.5rem;
     text-align: center;
-    border: 2px ridge #ED9100 ;
+    border: 2px ridge #ED9100;
     grid-area: lvl;
     box-shadow: 6px 6px 25px #d88e17;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    font-style: normal;
 }
 
 .costForNextLevel {
     padding-top: 0.5rem;
     padding-left: 0.4rem;
     text-align: center;
-    border: 2px ridge #ED9100 ;
+    border: 2px ridge #ED9100;
     border-radius: 0px 0px 10px 0px;
     grid-area: costForNextLevel;
     box-shadow: 6px 6px 25px #d88e17;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    font-style: normal;
+    margin-right: 1.5rem;
 }
 
 .side-bar-right {
@@ -700,6 +720,7 @@ img:nth-child(1) {
         top: 10%;
     }
 }
+
 /* Style du contenu de la modale surprise */
 .modalSurprise-content {
     margin: 15% auto;
