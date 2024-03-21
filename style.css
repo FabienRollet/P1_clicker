@@ -267,6 +267,15 @@ nav>ul:last-child {
     opacity: 70%;
     padding-bottom: 2rem;
     font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 6px 6px 25px rgb rgb(29, 77, 167);
+    border:groove;
+    font-size: larger;
+}
+#numberClicks {
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 .croissant-img:active {
@@ -375,8 +384,18 @@ img:nth-child(1) {
 
     100% {
 
-        top: 110%;
+        top: 215%;
         transform: translateX (-20px) rotate(225deg);
+    }
+}
+
+@media screen and (width >=768px) {
+    @keyframes fall {
+        100% {
+
+            top: 99%;
+
+        }
     }
 }
 
@@ -454,25 +473,29 @@ img:nth-child(1) {
 .production {
     padding-top: 0.5rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
+    box-shadow: 6px 6px 25px #d88e17;
+    
 }
 
 .level {
     padding-top: 0.5rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     grid-area: lvl;
+    box-shadow: 6px 6px 25px #d88e17;
 }
 
 .costForNextLevel {
     padding-top: 0.5rem;
     padding-left: 0.4rem;
     text-align: center;
-    border: 1px solid black;
+    border: 2px ridge #ED9100 ;
     border-radius: 0px 0px 10px 0px;
     grid-area: costForNextLevel;
+    box-shadow: 6px 6px 25px #d88e17;
 }
 
 .side-bar-right {
@@ -541,20 +564,21 @@ img:nth-child(1) {
 
 #upgradeList>li {
     list-style-type: none;
-    
+
 }
 
 #upgradeList>li>a {
     background-repeat: no-repeat, no-repeat;
     background-position: center;
     padding-top: 5rem;
-    display:block
+    display: block
 }
 
 #upgradeImg1 {
     background-image: url("assets/images/curseur-de-la-souris.png"), url("assets/images/cadre upgrade.png");
     background-size: 4rem, 5rem;
     display: block;
+
 }
 
 #upgradeImg2 {
@@ -589,7 +613,7 @@ img:nth-child(1) {
 
 #upgradeImg7 {
     background-image: url("assets/images/upgrade 10.png"), url("assets/images/cadre upgrade.png");
-    background-size: 5rem, 5rem;
+    background-size: 4rem, 5rem;
     display: block;
 }
 
