@@ -220,7 +220,6 @@ facerelease.addEventListener("mouseup", facerelease);
 
 function addValueOfUpgrade1() {
   numberClicks += 1000;
-  console.log("toto");
   document.getElementById("numberClicks").textContent = numberClicks;
 }
 
