@@ -259,6 +259,12 @@ nav>ul:last-child {
     display: block;
     margin: auto auto;
 }
+.midle {
+    background-image: url(/assets/images/fondCroissant.jfif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .money {
     text-align: center;
@@ -267,6 +273,7 @@ nav>ul:last-child {
     opacity: 70%;
     padding-bottom: 2rem;
     font-weight: bolder;
+    margin-top: 50px;
 }
 
 .croissant-img:active {
@@ -710,7 +717,6 @@ img:nth-child(1) {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        /* A CHANGERRRRRR*/
         border: 45px solid;
         border-image: url("/assets/images/bordure.png") 8%;
         height: 36rem;
