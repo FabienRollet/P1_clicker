@@ -141,10 +141,10 @@ nav>ul:last-child {
     display: none;
 }
 
-/* .personalisedCroissant>img{
-    width:16rem;
-    justify-content: space-between;
-} */
+.personalisedCroissant>img{
+    width:9rem;
+
+} 
 
 .who-are-we.open {
     display: block;
@@ -182,7 +182,6 @@ section>p {
 .autoclicker-container {
 
     display: inline-grid;
-    grid-template-columns: 85% 60px;
     grid-template-rows: auto;
     justify-content: left;
     align-items: end;
@@ -427,6 +426,11 @@ section>p {
         gap: 9px;
         padding-right: 5rem;
     }
+
+    .personalisedCroissant>img{
+        width:14rem;
+    
+    } 
 
     main {
         display: grid;
