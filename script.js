@@ -164,9 +164,25 @@ setInterval(() => {
 
 /*end autoclicker */
 
+/*modaleSurprise*/
+let numberClicksGoal = true;
+setInterval(() => {
+  if(numberClicks >= 100000 && numberClicks <= 20000 && numberClicksGoal){
+    let modal = document.getElementById("myModalSurprise");
+    modal.style.display = "block";
+    setTimeout(function () {
+      modal.style.display = "none";
+    }, 10000);
+    numberClicksGoal = !numberClicksGoal;
+  }
+}, 1000);
+
+/*fin modalesurprise*/
+
 /*CHanging croissant face*/
 let timerface;
 let badCroissant = false;
+
 let face = document.querySelector(".croissant-img");
 face.addEventListener("mousedown", facing);
 
@@ -337,8 +353,7 @@ function HiddenImg6() {
 }
 function HiddenImg7() {
   if (document.getElementById('upgradeImg7').style.display == 'block') {
-
-    document.getElementById('upgradeImg7').style.visibility='hidden';
+    document.getElementById('upgradeImg7').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg7').style.display = 'block';
@@ -347,8 +362,7 @@ function HiddenImg7() {
 }
 function HiddenImg8() {
   if (document.getElementById('upgradeImg8').style.display == 'block') {
-
-    document.getElementById('upgradeImg8').style.visibility='hidden';
+    document.getElementById('upgradeImg8').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg8').style.display = 'block';
@@ -357,8 +371,7 @@ function HiddenImg8() {
 }
 function HiddenImg9() {
   if (document.getElementById('upgradeImg9').style.display == 'block') {
-
-    document.getElementById('upgradeImg9').style.visibility='hidden';
+    document.getElementById('upgradeImg9').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg9').style.display = 'block';
@@ -367,8 +380,7 @@ function HiddenImg9() {
 }
 function HiddenImg10() {
   if (document.getElementById('upgradeImg10').style.display == 'block') {
-
-    document.getElementById('upgradeImg10').style.visibility='hidden';
+    document.getElementById('upgradeImg10').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg10').style.display = 'block';
@@ -377,8 +389,7 @@ function HiddenImg10() {
 }
 function HiddenImg11() {
   if (document.getElementById('upgradeImg11').style.display == 'block') {
-
-    document.getElementById('upgradeImg11').style.visibility='hidden';
+    document.getElementById('upgradeImg11').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg11').style.display = 'block';
@@ -387,8 +398,7 @@ function HiddenImg11() {
 }
 function HiddenImg12() {
   if (document.getElementById('upgradeImg12').style.display == 'block') {
-
-    document.getElementById('upgradeImg12').style.visibility='hidden';
+    document.getElementById('upgradeImg12').style.visibility = 'hidden';
   }
   else {
     document.getElementById('upgradeImg12').style.display = 'block';
