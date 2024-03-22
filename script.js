@@ -126,10 +126,10 @@ document.getElementById("autoClicker3").addEventListener("click", upValueAutoCli
 
 function upValueAutoClicker3() {
   if(twoPc){
-    prodAutoClicker3+= 10
+    prodAutoClicker3+= 20
   }
   if (numberClicks >= costAutoClicker3) {
-    prodAutoClicker3 += 10;
+    prodAutoClicker3 += 20;
     lvlAutoClicker3++;
     document.getElementById("numberClicks").textContent = (numberClicks -= costAutoClicker3);
     costAutoClicker3 = (costAutoClicker3+lvlAutoClicker3*5+1000);
