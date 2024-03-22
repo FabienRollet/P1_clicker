@@ -914,16 +914,6 @@ img:nth-child(1) {
         align-items: start;
     }
 
-    .production{
-        background-color: #fc974a;
-    }
-    .level{
-        background-color: #d88e17;
-    }
-    .costForNextLevel{
-        background-color: #ED9100;
-    }
-
     .side-bar-right {
         display: none;
     }
