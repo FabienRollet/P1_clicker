@@ -192,7 +192,7 @@ setInterval(() => {
     modal.style.display = "block";
     setTimeout(function () {
       modal.style.display = "none";
-    }, 10000);
+    }, 5000);
     numberClicksGoal = !numberClicksGoal;
   }
 }, 1000);
@@ -298,7 +298,7 @@ function addValueOfUpgrade11() {
 document.getElementById("upgradeImg11").addEventListener("click", addValueOfUpgrade11);
 
 function addValueOfUpgrade12() {
-  numberClicks += 12000;
+  numberClicks += 100000;
   document.getElementById("numberClicks").textContent = numberClicks;
 }
 document.getElementById("upgradeImg12").addEventListener("click", addValueOfUpgrade12);
