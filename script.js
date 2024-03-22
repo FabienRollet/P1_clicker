@@ -235,7 +235,6 @@ facerelease.addEventListener("mouseup", facerelease);
 // upgrade debloquage compteur
 
 function addValueOfUpgrade1() {
-  numberClicks += 1000;
   twoClick=true;
   document.getElementById("numberClicks").textContent = numberClicks;
 }
