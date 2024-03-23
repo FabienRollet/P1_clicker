@@ -12,6 +12,7 @@
 /*root a faire au début avec font family etc... peut etre importer le raleway en police */
 body {
     background-color: #FFE5A2;
+    font-family: "Raleway";
 }
 
 /*START NAVBAR STYLE*/
@@ -511,7 +512,6 @@ img:nth-child(1) {
     border-radius: 0px 40px 0px 0px;
     grid-area: production;
     box-shadow: 6px 6px 25px #d88e17;
-    font-family: "Yuji Syuku", serif;
     font-weight: bold;
     font-style: normal;
     margin-right: 1.5rem;
@@ -523,7 +523,6 @@ img:nth-child(1) {
     border: 2px ridge #ED9100;
     grid-area: lvl;
     box-shadow: 6px 6px 25px #d88e17;
-    font-family: "Yuji Syuku", serif;
     font-weight: bold;
     font-style: normal;
 }
@@ -536,7 +535,6 @@ img:nth-child(1) {
     border-radius: 0px 0px 10px 0px;
     grid-area: costForNextLevel;
     box-shadow: 6px 6px 25px #d88e17;
-    font-family: "Yuji Syuku", serif;
     font-weight: bold;
     font-style: normal;
     margin-right: 1.5rem;
