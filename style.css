@@ -927,7 +927,7 @@ img:nth-child(1) {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border: 45px solid;
-        border-image: url("assets/images/bordure.png") 8%;
+        border-image: url("assets/images/border.png") 8%;
         height: 36rem;
     }
 
