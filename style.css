@@ -923,7 +923,7 @@ img:nth-child(1) {
     .midle {
         grid-column-start: 2;
         grid-column-end: 3;
-        background-image: url(assets/images/fondCroissant.jfif);
+        background-image: url(assets/images/fondCroissant.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border: 45px solid;
