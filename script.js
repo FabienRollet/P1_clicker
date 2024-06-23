@@ -44,10 +44,10 @@ let music = document.querySelector(".music");
 function toggleMusic() {
   if (music.muted) {
     music.muted = false;
-    imgMusic.src = "/assets/images/Speaker_Icon.png";
+    imgMusic.src = "assets/images/Speaker_Icon.png";
   } else {
     music.muted = true;
-    imgMusic.src = "/assets/images/Speaker_muted.png";
+    imgMusic.src = "assets/images/Speaker_muted.png";
   }
 }
 
@@ -209,20 +209,20 @@ face.addEventListener("mousedown", facing);
 function facing() {
   if (!badCroissant) {
     if (numberClicks % 10 === 0 || numberClicks % 10 === 5) {
-      face.src = "/assets/images/cwasoface2.png";
+      face.src = "assets/images/cwasoface2.png";
     } else if (numberClicks % 10 === 1 || numberClicks % 10 === 6) {
-      face.src = "/assets/images/cwasoface3.png";
+      face.src = "assets/images/cwasoface3.png";
     } else if (numberClicks % 10 === 2 || numberClicks % 10 === 7) {
-      face.src = "/assets/images/cwasoface4.png";
+      face.src = "assets/images/cwasoface4.png";
     } else if (numberClicks % 10 === 3 || numberClicks % 10 === 8) {
-      face.src = "/assets/images/cwasoface5.png";
+      face.src = "assets/images/cwasoface5.png";
     } else if (numberClicks % 10 === 4 || numberClicks % 10 === 9) {
-      face.src = "/assets/images/cwasoface6.png";
+      face.src = "assets/images/cwasoface6.png";
     }
     badCroissant = true;
     clearTimeout(timerface);
     timerface = setTimeout(function () {
-      facerelease.src = "/assets/images/cwasoface.png";
+      facerelease.src = "assets/images/cwasoface.png";
       badCroissant = false;
     }, 1000);
   }

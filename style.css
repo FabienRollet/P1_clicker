@@ -24,7 +24,7 @@ h2 {
     justify-content: center;
     color: #FFE5A2;
     padding: 3rem;
-    background-image: url(./assets/images/wood\ navbar.png);
+    background-image: url(assets/images/wood\ navbar.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -288,7 +288,7 @@ nav>ul:last-child {
     margin: auto auto;
 }
 .midle {
-    background-image: url(/assets/images/fondCroissant.jfif);
+    background-image: url(assets/images/fondCroissant.jfif);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -858,7 +858,7 @@ img:nth-child(1) {
         grid-template-rows: 1fr;
         grid-template-columns: 1fr auto;
         padding: 2.7rem;
-        background-image: url(./assets/images/wood\ navbar.png);
+        background-image: url(assets/images/wood\ navbar.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         gap: 10px;
@@ -923,11 +923,11 @@ img:nth-child(1) {
     .midle {
         grid-column-start: 2;
         grid-column-end: 3;
-        background-image: url(/assets/images/fondCroissant.jfif);
+        background-image: url(assets/images/fondCroissant.jfif);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border: 45px solid;
-        border-image: url("/assets/images/bordure.png") 8%;
+        border-image: url("assets/images/bordure.png") 8%;
         height: 36rem;
     }
 
