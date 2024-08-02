@@ -287,6 +287,7 @@ nav>ul:last-child {
     display: block;
     margin: auto auto;
 }
+
 .midle {
     background-image: url(/assets/images/fondCroissant.jfif);
     background-size: 100% 100%;
@@ -596,7 +597,7 @@ img:nth-child(1) {
     }
 }
 
-#desc1{
+#desc1 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -605,7 +606,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc2{
+
+#desc2 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -614,7 +616,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc3{
+
+#desc3 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -623,7 +626,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc4{
+
+#desc4 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -632,7 +636,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc5{
+
+#desc5 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -641,7 +646,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc6{
+
+#desc6 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -650,7 +656,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc7{
+
+#desc7 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -659,7 +666,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc8{
+
+#desc8 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -668,7 +676,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc9{
+
+#desc9 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -677,7 +686,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc10{
+
+#desc10 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -686,7 +696,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc11{
+
+#desc11 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -695,7 +706,8 @@ img:nth-child(1) {
     width: 30ch;
     display: none;
 }
-#desc12{
+
+#desc12 {
     position: absolute;
     background-color: #70b3e1;
     border: 1px solid #d88e17;
@@ -706,7 +718,9 @@ img:nth-child(1) {
 }
 
 
-@media screen and (width >768px) {                          /* AFFICHAGE DESKTOP*/
+@media screen and (width >768px) {
+
+    /* AFFICHAGE DESKTOP*/
     .modalSurprise {
         display: none;
         /*Cachée par défaut*/
@@ -971,3 +985,135 @@ img:nth-child(1) {
         height: 7rem;
     }
 }
+
+/*conseil pour cacher et faire apparaitre les upgrades et les autocliker : 
+utiliser position relative sur l'élément à déplacer
+
+puis par ex : 
+
+position: relative;
+transform translateX(-90%);
+transition-duration : 4s;
+
+//left: x%; (valeur par raport à la taille du conteneur)//
+
+ou
+
+#element:hover{
+    transform translateX(0)(par rapport à la taille de l'éléments)
+}
+
+ou active (veut dire quand on click)
+#element:active{
+    transform translateX(0);
+
+(attention lélément qui n'est plus hover ou active 
+reviendra à sa position initiale)
+
+puis aller en js et faire
+
+const elementEnJs = document.querySelector("#box");
+elementEnJs.addEventListener('click', () => {
+ elementEnJs.style.transform = tranlateX(0);
+}
+
+
+astuce utiliser dans des balise p des input/label avec id pour pouvoir cliquer sur le carré et le label pour modifier sont état sélctionné ou déselectionné
+sans l'id on peut pas cliquer sur le label (pas pratique pour la version mobile
+utiliser le sélecteur + (voisin adjacent) l'élément de la fratrie précédé de, ex : h2+p
+et pas sélecteur ~ (voisin généraux) tout les éléments de la fratrie précédé de, ex h2~p
+
+input:checked+label
+*/
+
+
+/* label{
+    display: block;
+}
+input:checked{
+    transform translateX(0);
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #box, label
+    {
+      width: 300px;
+      height: 300px;*/
+/* position: relative; */
+/* 50% = 50% de la largeur son conteneur */
+/* left: -50%; */
+/* left: 0; */
+/* en px */
+/* transform: translateX(-270px); */
+/* en % */
+/*      transform: translateX(-90%);
+      background-color: darkred;
+      transition-duration: 1s;
+    }
+
+    #box-2
+    {
+      width: 600px;
+      height: 600px;   
+      margin: auto;   
+      border: 1px solid;
+    }
+
+    #box:active
+    {
+      /* transform: translateX(0); */
+/* background-color: blue; */
+}
+
+/* Sélecteur voisins généraux ~ */
+
+/* Sélecteur adjacent h2+p => p précédé d'un h2*/
+/*    input:checked+label
+    {
+      transform: translateX(0); 
+      border: 1px solid red;
+    }
+
+    label
+    {
+      display: none;
+      width: 300px;
+      height: 300px;
+    }
+    input
+    {
+      transform: translateX(-350px);
+    }
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div id="box-2">
+    <div id="box"></div>
+
+    
+    <h2>Quels sont vos consoles préférées</h2>
+    <div>
+      <input id="supernes" type="checkbox">
+      <label for="supernes">Super Nintendo</label>
+    </div>
+ 
+  </div>
+  <!-- <script>
+    const color = '#edf';
+    const boxEnJS = document.querySelector('#box');
+    boxEnJS.addEventListener('click', () =>
+    {      
+      boxEnJS.style.transform = `translateX(0)`;
+      boxEnJS.style.backgroundColor = `#edf`;
+      boxEnJS.style.border = `1px solid ${color}`;
+    })
+
+  </script> -->
+</body>
+</html> */

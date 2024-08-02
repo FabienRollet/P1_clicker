@@ -1,226 +1,421 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Croissant clicker !</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/cwaso2.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="description" content="site du jeu croissant clicker">
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Croissant cliker !</title>
-    <link rel="shortcut icon" href="assets/images/cwaso2.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-</head>
+  <body>
+    <header>
+      <!-- NAV BAR-->
+      <h2 onclick="togglePopup0()" class="menu"><a href="navbar"></a>Menu</h2>
+      <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar" />
+      <nav class="navbar">
+        <ul>
+          <li onclick="togglePopup1()">
+            <a href="how-to-play"></a>Comment jouer ?
+          </li>
+          <li onclick="togglePopup2()">
+            <a href="who-are-we"></a>Qui sommes-nous ?
+          </li>
+          <li>
+            <audio class="music" controls autoplay loop muted>
+              <source
+                src="/assets/sound/8-bit-dream-land-142093.mp3"
+                type="audio/mpeg"
+              />
+              Your browser does not support the audio.
+            </audio>
+            <img
+              class="imgMusic"
+              src="/assets/images/Speaker_muted.png"
+              alt="Activer le son"
+              onclick="toggleMusic()"
+            />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61557375269622&locale=fr_FR"
+              ><img src="/assets/images/faceboo.png" alt="Link to facebook"
+            /></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/Presidentc75312"
+              ><img src="/assets/images/twitter.png" alt="Link to X"
+            /></a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              ><img src="/assets/images/Youtube.png" alt="Link to YouTube"
+            /></a>
+          </li>
 
-<body>
-    <header> <!-- NAV BAR-->
-        <h2 onclick="togglePopup0()" class="menu"><a href="navbar"></a>Menu</h2>
-        <img src="/assets/images/Menu-scroll.png" alt="Menu scrolling bar">
-        <nav class="navbar">
-            <ul>
-                <li onclick="togglePopup1()"><a href="how-to-play"></a>Comment jouer ?</li>
-                <li onclick="togglePopup2()"><a href="who-are-we"></a>Qui sommes-nous ?</li>
-                <li><audio class="music" controls autoplay loop muted>
-                        <source src="/assets/sound/8-bit-dream-land-142093.mp3" type="audio/mpeg">
-                        Your browser does not support the audio.
-                    </audio>
-                    <img class="imgMusic" src="/assets/images/Speaker_muted.png" alt="Activer le son"
-                        onclick="toggleMusic()">
-                </li>
-            </ul>
-            <ul>
-                <li><a target="_blank" href="https://www.facebook.com/profile.php?id=61557375269622&locale=fr_FR"><img
-                            src="/assets/images/faceboo.png" alt="Link to facebook"></a></li>
-                <li><a target="_blank" href="https://twitter.com/Presidentc75312"><img src="/assets/images/twitter.png"
-                            alt="Link to X"></a></li>
-                <li><a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img
-                            src="/assets/images/Youtube.png" alt="Link to YouTube"></a></li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/cwasogrille/"
+              ><img src="/assets/images/insta.png" alt="Link to Instagram"
+            /></a>
+          </li>
 
+          <li>
+            <a target="_blank" href="https://github.com/Gamarin0/P1_clicker"
+              ><img src="/assets/images/github.png" alt="Link to Github"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- section comment jouer -->
+      <section class="how-to-play">
+        <img
+          src="/assets/images/Barre1.png"
+          alt="decoration"
+          class="barreHaut"
+        />
 
-                <li><a target="_blank" href="https://www.instagram.com/cwasogrille/"><img src="/assets/images/insta.png"
-                            alt="Link to Instagram"></a></li>
+        <h3>Comment jouer?</h3>
 
-                <li><a target="_blank" href="https://github.com/Gamarin0/P1_clicker"><img
-                            src="/assets/images/github.png" alt="Link to Github"></a></li>
-            </ul>
-        </nav>
-        <!-- section comment jouer -->
-        <section class="how-to-play">
-            <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
+        <ul>
+          <li>Cliquez sur le croissant pour gagner des CryptoCroissant.</li>
+          <li>
+            Achetez des autoclickers pour générer des CryptoCroissant
+            passivement.
+          </li>
+          <li>
+            Achetez des améliorations pour gagner encore plus de CryptoCroissant
+            !
+          </li>
+        </ul>
+        <p onclick="togglePopup1()">Fermer</p>
 
-            <h3>Comment jouer?</h3>
+        <img
+          src="/assets/images/Barre1.png"
+          alt="decoration"
+          class="barreBas"
+        />
+      </section>
+      <!-- section Qui sommes nous -->
 
-            <ul>
-                <li>Cliquez sur le croissant pour gagner des CryptoCroissant.</li>
-                <li>Achetez des autoclickers pour générer des CryptoCroissant passivement.</li>
-                <li>Achetez des améliorations pour gagner encore plus de CryptoCroissant !</li>
-            </ul>
-            <p onclick="togglePopup1()">Fermer</p>
-
-            <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
-        </section>
-        <!-- section Qui sommes nous -->
-
-        <section class="who-are-we">
-            <img src="/assets/images/Barre1.png" alt="decoration" class="barreHaut">
-            <h3>Qui sommes nous</h3>
-            <div class="personalisedCroissant">
-                <img src="/assets/images/Pol.png" alt="croissant Paul">
-                <img src="/assets/images/Fabie.png" alt="croissant Fabien">
-                <img src="/assets/images/Kévin.png" alt="croissant Kévin">
-                <img src="/assets/images/pj.png" alt="croissant PJ">
-                <p onclick="togglePopup2()">Fermer</p>
-            </div>
-            <img src="/assets/images/Barre1.png" alt="decoration" class="barreBas">
-        </section>
+      <section class="who-are-we">
+        <img
+          src="/assets/images/Barre1.png"
+          alt="decoration"
+          class="barreHaut"
+        />
+        <h3>Qui sommes nous</h3>
+        <div class="personalisedCroissant">
+          <img src="/assets/images/Pol.png" alt="croissant Paul" />
+          <img src="/assets/images/Fabie.png" alt="croissant Fabien" />
+          <img src="/assets/images/Kévin.png" alt="croissant Kévin" />
+          <img src="/assets/images/pj.png" alt="croissant PJ" />
+          <p onclick="togglePopup2()">Fermer</p>
+        </div>
+        <img
+          src="/assets/images/Barre1.png"
+          alt="decoration"
+          class="barreBas"
+        />
+      </section>
     </header>
     <!--ADVERTISING mobile-->
     <aside>
-        <section class="carouselMobile">
-            <img src="assets/images/PubCroissantQuizz.PNG" alt="Image 1">
-            <img src="assets/images/pubWIldcards.png" alt="Image 2">
-            <img src="assets/images/pubWildEat.png" alt="Image 3">
-        </section>
+      <section class="carouselMobile">
+        <img src="assets/images/PubCroissantQuizz.PNG" alt="Image 1" />
+        <img src="assets/images/pubWIldcards.png" alt="Image 2" />
+        <img src="assets/images/pubWildEat.png" alt="Image 3" />
+      </section>
     </aside>
     <main>
+      <!--AUTOCLICKER-->
 
-        <!--AUTOCLICKER-->
-
-        <section class="autoclicker-container">
-
-            <ul class="menuDeroulant">
-                <li class="autoClicker" id="autoClicker1">
-                    <section class="autoClicker1Picture"></section>
-                    <p class="production">prod. <span id="prodAutoClicker1">0</span>/s</p>
-                    <p class="level">lv <span id="lvlAutoClicker1">0</span></p>
-                    <p class="costForNextLevel"><span id="costAutoClicker1">15</span> CC</p>
-                </li>
-                <li class="autoClicker" id="autoClicker2">
-                    <section class="autoClicker2Picture"></section>
-                    <p class="production">prod. <span id="prodAutoClicker2">0</span>/s</p>
-                    <p class="level">lv <span id="lvlAutoClicker2">0</span></p>
-                    <p class="costForNextLevel"><span id="costAutoClicker2">200</span> CC</p>
-                </li>
-                <li class="autoClicker" id="autoClicker3">
-                    <section class="autoClicker3Picture"></section>
-                    <p class="production">prod. <span id="prodAutoClicker3">0</span>/s</p>
-                    <p class="level">lv <span id="lvlAutoClicker3">0</span></p>
-                    <p class="costForNextLevel"><span id="costAutoClicker3">1000</span> CC</p>
-                </li>
-                <li class="autoClicker" id="autoClicker4">
-                    <section class="autoClicker4Picture"></section>
-                    <p class="production">prod. <span id="prodAutoClicker4">0</span>/s</p>
-                    <p class="level">lv <span id="lvlAutoClicker4">0</span></p>
-                    <p class="costForNextLevel"><span id="costAutoClicker4">15000</span> CC</p>
-
-                </li>
-            </ul>
-            <img onclick="togglePopup3()" class="side-bar-right" src="/assets/images/barre laterale.png" alt="test">
-
-            <!-- modale -->
-            <section id="myModal" class="modal">
-                <section class="modal-content">
-                    <p>Pas de sous pour les croissants !! </p>
-                    <p>ヽ（≧□≦）ノ</p>
-                </section>
-            </section>
-            <!-- fin modale   -->
-        </section>
-
-        <!--CROISSANT AND COUNTER-->
-        <section class="midle" class="blocCroissant">
-
-            <h1 class="counter"></h1>
-            <p class="money">
-                <span id="numberClicks">0</span><br>CryptoCroissants
-
+      <section class="autoclicker-container">
+        <ul class="menuDeroulant">
+          <li class="autoClicker" id="autoClicker1">
+            <section class="autoClicker1Picture"></section>
+            <p class="production">
+              prod. <span id="prodAutoClicker1">0</span>/s
             </p>
-            <img id="boutonClic" class="croissant-img" src="/assets/images/cwasoface.png" alt="a clickable croissant ">
+            <p class="level">lv <span id="lvlAutoClicker1">0</span></p>
+            <p class="costForNextLevel">
+              <span id="costAutoClicker1">15</span> CC
+            </p>
+          </li>
+          <li class="autoClicker" id="autoClicker2">
+            <section class="autoClicker2Picture"></section>
+            <p class="production">
+              prod. <span id="prodAutoClicker2">0</span>/s
+            </p>
+            <p class="level">lv <span id="lvlAutoClicker2">0</span></p>
+            <p class="costForNextLevel">
+              <span id="costAutoClicker2">200</span> CC
+            </p>
+          </li>
+          <li class="autoClicker" id="autoClicker3">
+            <section class="autoClicker3Picture"></section>
+            <p class="production">
+              prod. <span id="prodAutoClicker3">0</span>/s
+            </p>
+            <p class="level">lv <span id="lvlAutoClicker3">0</span></p>
+            <p class="costForNextLevel">
+              <span id="costAutoClicker3">1000</span> CC
+            </p>
+          </li>
+          <li class="autoClicker" id="autoClicker4">
+            <section class="autoClicker4Picture"></section>
+            <p class="production">
+              prod. <span id="prodAutoClicker4">0</span>/s
+            </p>
+            <p class="level">lv <span id="lvlAutoClicker4">0</span></p>
+            <p class="costForNextLevel">
+              <span id="costAutoClicker4">15000</span> CC
+            </p>
+          </li>
+        </ul>
+        <img
+          onclick="togglePopup3()"
+          class="side-bar-right"
+          src="/assets/images/barre laterale.png"
+          alt="test"
+        />
 
-            <!-- modalSurprise -->
-            <section id="myModalSurprise" class="modalSurprise">
-                <section class="modalSurprise-content">
-                    <img src="assets/images/modaleSurprise.jpeg" alt="modal surprise">
-                </section>
-            </section>
-            <!-- fin modalSurprise -->
-
-            <div class="pluie">
-                <img class="backgroundCrescent1" src="assets/images/fond croissant 1.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent3" src="assets/images/fond croissant 3.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent2" src="assets/images/fond croissant 2.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent4" src="assets/images/fond croissant 4.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent5" src="assets/images/fond croissant 1.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent6" src="assets/images/fond croissant 2.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent7" src="assets/images/fond croissant 4.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent8" src="assets/images/fond croissant 1.png"
-                    alt="petit croissant qui defile" width="25rem">
-                <img class="backgroundCrescent9" src="assets/images/fond croissant 2.png"
-                    alt="petit croissant qui defile" width="25rem">
-            </div>
-
-
+        <!-- modale -->
+        <section id="myModal" class="modal">
+          <section class="modal-content">
+            <p>Pas de sous pour les croissants !!</p>
+            <p>ヽ（≧□≦）ノ</p>
+          </section>
         </section>
+        <!-- fin modale   -->
+      </section>
 
+      <!--CROISSANT AND COUNTER-->
+      <section class="midle" class="blocCroissant">
+        <h1 class="counter"></h1>
+        <p class="money">
+          <span id="numberClicks">0</span><br />CryptoCroissants
+        </p>
+        <img
+          id="boutonClic"
+          class="croissant-img"
+          src="/assets/images/cwasoface.png"
+          alt="a clickable croissant "
+        />
 
-        <!--UPGRADE-->
-
-        <section class=upgrade>
-            <ul id="upgradeList">
-                <img class="side-bar" src="/assets/images/barre laterale.png" alt="test">
-
-                <li><a href='javascript: HiddenImg()' id="upgradeImg1" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg2()' id="upgradeImg2" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg3()' id="upgradeImg3" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg4()' id="upgradeImg4" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg5()' id="upgradeImg5" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg6()' id="upgradeImg6" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg7()' id="upgradeImg7" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg8()' id="upgradeImg8" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg9()' id="upgradeImg9" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg10()' id="upgradeImg10" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg11()' id="upgradeImg11" class="upgrades"></a></li>
-                <li><a href='javascript: HiddenImg12()' id="upgradeImg12" class="upgrades"></a></li>
-            </ul>
-
-            <!-- Advertising desktop -->
-            <section class="carouselDesktop">
-                <img src="assets/images/PubCroissantQuizz.PNG" alt="Image 1">
-                <img src="assets/images/pubWIldcards.png" alt="Image 2">
-                <img src="assets/images/pubWildEat.png" alt="Image 3">
-            </section>
-
+        <!-- modalSurprise -->
+        <section id="myModalSurprise" class="modalSurprise">
+          <section class="modalSurprise-content">
+            <img src="assets/images/modaleSurprise.jpeg" alt="modal surprise" />
+          </section>
         </section>
+        <!-- fin modalSurprise -->
 
-        <ul>
-            <li id="desc1">Cout : 300 <br>Amélioration : Vous produisez maintenant 2 CryptoCroissants à chaque clic.
-            </li>
-            <li id="desc2">Cout : 1000 <br>Amélioration : Vos prochaines grands-mères produiront 2 fois plus de
-                CryptoCroissants. </li>
-            <li id="desc3">Cout : 5000<br>Amélioration : Vos prochaines boulangeries produiront 2 fois plus de
-                CryptoCroissants.</li>
-            <li id="desc4">Cadeau ! Cette tartelette au citron meringuée te donne plein de sérotonine. CryptoCroissants
-                +1000 (✿◠‿◠) </li>
-            <li id="desc5">Cout : <br>Amélioration : </li>
-            <li id="desc6">Cout : <br>Amélioration : </li>
-            <li id="desc7">Cout : <br>Amélioration : </li>
-            <li id="desc8">Cout : <br>Amélioration : </li>
-            <li id="desc9">Cout : <br>Amélioration : </li>
-            <li id="desc10">Cout : <br>Amélioration : </li>
-            <li id="desc11">Cout : <br>Amélioration : </li>
-            <li id="desc12">Cout : <br>Amélioration : </li>
+        <div class="pluie">
+          <img
+            class="backgroundCrescent1"
+            src="assets/images/fond croissant 1.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent3"
+            src="assets/images/fond croissant 3.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent2"
+            src="assets/images/fond croissant 2.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent4"
+            src="assets/images/fond croissant 4.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent5"
+            src="assets/images/fond croissant 1.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent6"
+            src="assets/images/fond croissant 2.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent7"
+            src="assets/images/fond croissant 4.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent8"
+            src="assets/images/fond croissant 1.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+          <img
+            class="backgroundCrescent9"
+            src="assets/images/fond croissant 2.png"
+            alt="petit croissant qui defile"
+            width="25rem"
+          />
+        </div>
+      </section>
+
+      <!--UPGRADE-->
+
+      <section class="upgrade">
+        <ul id="upgradeList">
+          <img
+            class="side-bar"
+            src="/assets/images/barre laterale.png"
+            alt="test"
+          />
+
+          <li>
+            <a
+              href="javascript: HiddenImg()"
+              id="upgradeImg1"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg2()"
+              id="upgradeImg2"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg3()"
+              id="upgradeImg3"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg4()"
+              id="upgradeImg4"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg5()"
+              id="upgradeImg5"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg6()"
+              id="upgradeImg6"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg7()"
+              id="upgradeImg7"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg8()"
+              id="upgradeImg8"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg9()"
+              id="upgradeImg9"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg10()"
+              id="upgradeImg10"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg11()"
+              id="upgradeImg11"
+              class="upgrades"
+            ></a>
+          </li>
+          <li>
+            <a
+              href="javascript: HiddenImg12()"
+              id="upgradeImg12"
+              class="upgrades"
+            ></a>
+          </li>
         </ul>
 
+        <!-- Advertising desktop -->
+        <section class="carouselDesktop">
+          <img src="assets/images/PubCroissantQuizz.PNG" alt="Image 1" />
+          <img src="assets/images/pubWIldcards.png" alt="Image 2" />
+          <img src="assets/images/pubWildEat.png" alt="Image 3" />
+        </section>
+      </section>
+
+      <ul>
+        <li id="desc1">
+          Cout : 300 <br />Amélioration : Vous produisez maintenant 2
+          CryptoCroissants à chaque clic.
+        </li>
+        <li id="desc2">
+          Cout : 1000 <br />Amélioration : Vos prochaines grands-mères
+          produiront 2 fois plus de CryptoCroissants.
+        </li>
+        <li id="desc3">
+          Cout : 5000<br />Amélioration : Vos prochaines boulangeries produiront
+          2 fois plus de CryptoCroissants.
+        </li>
+        <li id="desc4">
+          Cadeau ! Cette tartelette au citron meringuée te donne plein de
+          sérotonine. CryptoCroissants +1000 (✿◠‿◠)
+        </li>
+        <li id="desc5">Cout : <br />Amélioration :</li>
+        <li id="desc6">Cout : <br />Amélioration :</li>
+        <li id="desc7">Cout : <br />Amélioration :</li>
+        <li id="desc8">Cout : <br />Amélioration :</li>
+        <li id="desc9">Cout : <br />Amélioration :</li>
+        <li id="desc10">Cout : <br />Amélioration :</li>
+        <li id="desc11">Cout : <br />Amélioration :</li>
+        <li id="desc12">Cout : <br />Amélioration :</li>
+      </ul>
     </main>
-    <audio id="audio" src="assets/sound/anime-wow-sound-effect_ejcigGk.mp3"></audio>
+    <audio
+      id="audio"
+      src="assets/sound/anime-wow-sound-effect_ejcigGk.mp3"
+    ></audio>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
